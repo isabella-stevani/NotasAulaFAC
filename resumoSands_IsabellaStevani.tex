@@ -1,0 +1,71 @@
+\documentclass[a4paper, 12pt]{./Template/lnls-note-PT}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{indentfirst}
+\numberwithin{equation}{section} %numera a equação de acordo com sua seção
+\usepackage[pdftex,colorlinks=true,citecolor=black,linkcolor=black,urlcolor=black,filecolor=black]{hyperref}
+\usepackage[num,abnt-emphasize=bf, bibjustif]{abntex2cite}
+\citebrackets[]
+%\documentclass[a4paper, 12pt, report]{lnls-note} % if you want to have chapters choose this one
+
+%loads standard preamble configuration
+\input{./Template/standard_preamble.tex}
+
+%loads standard commands
+\input{./Template/new_commands.tex}
+
+
+\begin{document}
+
+\lnlstitle{134518}{\today}{Grupo de Estudos: Física de Aceleradores}
+{Isabella Stevani}{\LNLS}
+{Seguindo o livro \textit{The physics of electron storage rings: an introdution} de Matthew Sands \cite{sands1970physics}, este grupo de estudos tem por objetivo estudar e discutir o funcionamento de um acelerador de partículas, desde os elementos que o compõe como os fenômenos físicos que modelam sua dinâmica. Este documento traz anotações e deduções úteis de forma a facilitar o completo entendimento deste assunto.}
+
+\newpage
+\setcounter{page}{2}
+\tableofcontents
+
+\newpage
+\section{Introdução}
+	\input{1_ComentariosIniciais}
+    \input{1_01_MecanismosBasicos}
+    \input{1_02_EfeitosColetivos}
+    \pagebreak
+  
+\section{Oscilações Betatron}
+	\input{2_01_SistemaCoordenadas}
+    \input{2_02_CampoGuia}
+    \input{2_03_EquacoesMovimento}
+    \input{2_04_SeparacaoMovimentoRadial}
+    \input{2_05_TrajetoriasBetatron}
+    \input{2_06_OscilacoesBetatronPseudoHarm}
+    \input{2_07_Sintonias}
+	\input{2_08_AproxOscilacoesBetatron}
+	\input{2_09_NaturezaFuncaoBeta}
+	\input{2_10_PerturbacaoOrbitaFechada}
+	\input{2_11_ErrosGradienteCampo}
+	\pagebreak
+	
+\section{Oscilações de Energia}
+	\input{3_01_OrbitasFechadas}
+	\input{3_02_TamanhoOrbFatorDilatacao}
+
+%\chapter{Oscilações em Energia}
+%\chapter{Amortecimento por Radiação}
+%\chapter{Excitação por Radiação}
+
+
+% Our bibtex file :)
+\newpage
+\bibliography{biblio}
+
+
+\end{document}
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+\subsection{Separação do movimento radial}
+É conveniente separar o movimento radial em duas partes: uma parte sendo uma curva fechada deslocada da órbita de design -- a órbita de equilíbrio dos elétrons com desvio de energia -- e a outra parte sendo a oscilação transversal em torno desta órbita. Suponha que $x$ seja
+	
+\begin{align}
+	x = x_{\epsilon} + x_{\beta}\label{eq:2.25}
+\end{align}
+então certamente a equação \eqref{eq:2.19} é satisfeita se as equações
+\begin{align}
+	x_\epsilon'' &= K_x(s)x_\epsilon + G(s)\frac{\epsilon}{E_0}\label{eq:2.26}\\
+	x_\beta'' &= K_x(s)x_\beta\label{eq:2.27}
+\end{align}
+forem verdadeiras.
+	
+\begin{proof}
+    Pela equação \eqref{eq:2.25}, $x = x_{\epsilon} + x_{\beta}$. Logo,
+    \begin{align*}
+        x'' &= x_{\epsilon}'' + x_{\beta}''\\
+            &= K_x(s)x_\epsilon + G(s)\frac{\epsilon}{E_0} + K_x(s)x_\beta\\
+            &= K_x(s)(x_\epsilon + x_\beta) + G(s)\frac{\epsilon}{E_0}\\
+            &= K_x(s)x + G(s)\frac{\epsilon}{E_0}
+    \end{align*}
+\end{proof}
+	
+Definindo que $x_\epsilon(s)$ é uma função periódica em $s$ com período $L$, então $x_\epsilon(s)$ é a órbita fechada de um elétron com energia $E_0 + \epsilon$ (com $x_\beta=0$), e o movimento radial será a soma do desvio dessa nova órbita de equilíbrio e uma oscilação betatron.
+	
+O desvio $x_\epsilon$ é proporcional ao desvio de energia $\epsilon$. Define-se	
+\begin{align}
+	x_\epsilon(s) = \eta(s)\frac{\epsilon}{E_0}\label{eq:2.29}
+\end{align}
+onde $\eta(s)$ é a função única que satisfaz	
+\begin{align}
+	\begin{cases}
+		\eta'' = K_x(s)\eta + G(s), \\
+        \eta(0) = \eta(L), \\
+        \eta'(0) = \eta'(L).
+    \end{cases}
+\end{align}
+	
+\begin{proof}
+	Seja $x_\epsilon(s)$ dado pela equação \eqref{eq:2.29}. Pela equação \eqref{eq:2.26},
+	\begin{align*}
+        x_\epsilon'' &= K_x(s)x_\epsilon + G(s)\frac{\epsilon}{E_0}\\
+        \left(\eta(s)\frac{\epsilon}{E_0}\right)'' &= K_x(s)\eta(s)\frac{\epsilon}{E_0} + G(s)\frac{\epsilon}{E_0}\\
+        \eta(s)''\frac{\epsilon}{E_0} &= K_x(s)\eta(s)\frac{\epsilon}{E_0} + G(s)\frac{\epsilon}{E_0}\\
+        \eta'' &= K_x(s)\eta + G(s)
+	\end{align*}
+\end{proof}
+	
+Denomina-se $\eta(s)$ como sendo a função de órbita fechada, e é uma função que caracteriza o campo guia total do anel. Note que $\eta (s)$ é a solução particular da equação diferencial \eqref{eq:2.26} em que a função é periódica com período $L$ e não depende de características do elétron, apenas da ótica do anel.
