@@ -1,12 +1,15 @@
 \documentclass[a4paper, 12pt]{./Template/lnls-note-PT}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{amsthm}
 \usepackage{indentfirst}
 \numberwithin{equation}{section} %numera a equação de acordo com sua seção
 \usepackage[pdftex,colorlinks=true,citecolor=black,linkcolor=black,urlcolor=black,filecolor=black]{hyperref}
 \usepackage[num,abnt-emphasize=bf, bibjustif]{abntex2cite}
+\usepackage{tipa}
 \citebrackets[]
 %\documentclass[a4paper, 12pt, report]{lnls-note} % if you want to have chapters choose this one
+\newcommand{\lambdabar}{\mbox{\textipa{\textcrlambda}}}
 
 %loads standard preamble configuration
 \input{./Template/standard_preamble.tex}
@@ -46,17 +49,18 @@
 	\input{2_11_ErrosGradienteCampo}
 	\pagebreak
 	
-\section{Oscilações de Energia}
+\section{Oscilações em Energia}
 	\input{3_01_OrbitasFechadas}
 	\input{3_02_TamanhoOrbFatorDilatacao}
+	\pagebreak
 
-%\chapter{Oscilações em Energia}
-%\chapter{Amortecimento por Radiação}
-%\chapter{Excitação por Radiação}
+\section{Amortecimento por Radiação}
+	\pagebreak
+
+\section{Excitação por Radiação}
+	\pagebreak
 
 
-% Our bibtex file :)
-\newpage
 \bibliography{biblio}
 
 
