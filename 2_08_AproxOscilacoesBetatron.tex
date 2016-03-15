@@ -1,7 +1,7 @@
 \subsection{Descrição aproximada das oscilações betatron}
 Para diversos propósitos, é conveniente -- e suficiente -- aproximar o movimento betatron por uma oscilação harmônica simples. Considera-se a oscilação
 \begin{align}
-	x = A\ cos(s/ \lambdabar - \upsilon)\label{eq:2.66}
+	x = A\ cos(s/ \lambdabar - \vartheta)\label{eq:2.66}
 \end{align}
 onde $\lambdabar$ é constante (o comprimento de onda reduzido). Uma oscilação completa é realizada quando $s$ avança por um comprimento de onda $2\pi \lambdabar$. É claramente conveniente pensar na oscilação pseudo-harmônica da equação \eqref{eq:2.43} como apenas uma onda senoidal com um comprimento de onda localmente variável -- se a variação de amplitude for ignorada. E, com tanto que $\beta$ não varie tão abruptamente, pode-se esperar que esta é uma aproximação razoável para o movimento real se a equação \eqref{eq:2.66} for utilizada com um $\lambdabar$ escolhido apropriadamente. Supõe-se que o número $\beta_n$ seja definido de forma a ser uma constante que dará o mesmo avanço de fase em uma revolução que a real função $\beta$. Isto é, $\beta_n$ é definido por
 \begin{align}
@@ -9,7 +9,7 @@ onde $\lambdabar$ é constante (o comprimento de onda reduzido). Uma oscilação
 \end{align}
 e é chamado de valor típico de $\beta$. Então, a oscilação
 \begin{align}
-	x = A\ cos(s/\beta_n + \upsilon)\label{eq:2.68}
+	x = A\ cos(s/\beta_n + \vartheta)\label{eq:2.68}
 \end{align}
 irá -- com $A=a\sqrt{\beta_n}$ -- estar de acordo com a trajetória real pelo menos uma vez a cada revolução; e, em particular, irá estar, na média, em fase com a oscilação real. Na \autoref{fig:fig15} estão representadas uma das trajetórias da \autoref{fig:fig12} junto com sua aproximação obetida pela equação \eqref{eq:2.66}.
 
@@ -39,7 +39,7 @@ então pode-se também definir como
 	\beta_n = \frac{R}{\nu}
 \end{align}
 
-Note que $\beta_n$ não é igual à média de $\beta$, apesar de que também não é muito diferente se as ondulações de $\beta$ não forem muito grandes.
+Note que $\beta_n$ não é igual à média de $\beta$, apesar de que também não é muito diferente se as ondulações de $\beta$ não forem muito grandes. Vale ressaltar que $\beta_n$ é tal que a sintonia da máquina é mantida.
 
 \begin{proof}
 	Pela definição de $\nu$ e $\beta_n$ dadas respectivamente pelas equações \eqref{eq:2.60} e \eqref{eq:2.67},
@@ -59,21 +59,21 @@ Note que $\beta_n$ não é igual à média de $\beta$, apesar de que também nã
 
 A variação de tempo da trajetória aproximada da equação \eqref{eq:2.68} é descrita como
 \begin{align}
-	x = A\ cos(\nu \omega_r t - \upsilon)
+	x = A\ cos(\nu \omega_r t - \vartheta)
 \end{align}
 com $\omega_r = c/R$.
 
 \begin{proof}
-	Pela equação \eqref{eq:2.68}, $x = A\ cos(s/\beta_n - \upsilon)$. Agora, considerando como 0 a coordenada $s$ de referência, pela equação \eqref{eq:2.48}:
+	Pela equação \eqref{eq:2.68}, $x = A\ cos(s/\beta_n - \vartheta)$. Agora, considerando como 0 a coordenada $s$ de referência, pela equação \eqref{eq:2.48}:
 	\begin{align*}
-		x &= A\ cos(s/\beta_n - \upsilon)\\
-		  &= A\ cos(ct/\beta_n - \upsilon)\\
-		  &= A\ cos(\nu c t/R - \upsilon)
+		x &= A\ cos(s/\beta_n - \vartheta)\\
+		  &= A\ cos(ct/\beta_n - \vartheta)\\
+		  &= A\ cos(\nu c t/R - \vartheta)
 	\end{align*}
 	
 	Definindo $\omega_r = c/R$, tem-se
 	\begin{align*}
-		x &= A\ cos(\nu \omega_r t - \upsilon)
+		x &= A\ cos(\nu \omega_r t - \vartheta)
 	\end{align*}
 	c.q.d.
 \end{proof}
