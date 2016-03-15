@@ -111,7 +111,7 @@ A equação correspondente para o movimento vertical é
 	
 	Agora, pela equação \eqref{eq:2.12},
 	\begin{align*}
-		x'' &= \frac{d(\theta-\theta_0)}{ds}\\
+		z'' &= \frac{d(\theta-\theta_0)}{ds}\\
 			&= \frac{K_1 z\ ds}{ds}\\
 			&= K_1 z
 	\end{align*}
@@ -120,13 +120,13 @@ A equação correspondente para o movimento vertical é
 
 Definindo as funções focalizadoras $K_x$ e $K_z$ como
 \begin{align}
-	K_x(s) &= -G^2(s)-K_1(s)\\
-	K_z(s) &= + K_1(s)
+	K_x(s) &= G^2(s)+K_1(s)\\
+	K_z(s) &= - K_1(s)
 \end{align}
 tem-se que $x''$ e $z''$ podem ser descritos como
 \begin{align}
-	x'' &= K_x(s)x + G(s)\frac{\epsilon}{E_0}\label{eq:2.19}\\
-	z'' &= K_z(s)z\label{eq:2.20}
+	x'' &= -K_x(s)x + G(s)\frac{\epsilon}{E_0}\label{eq:2.19}\\
+	z'' &= -K_z(s)z\label{eq:2.20}
 \end{align}
 
 O termo correspondente à $G^2$ está "faltando" de $K_z$ devido à consideração de que a órbita ideal está no plano, ou seja, não possui componente vertical. Mais especificamente, $G^2$ é um termo de força centrífuga, e um termo correspondente apareceria no movimento vertical se a órbita tivesse picos e vales. Anéis de armazenamento possuem, em geral, uma forte focalização. Neste caso, $G^2$ é bem menor que $K_1$, então $K_x$ e $K_z$ são aproximadamente iguais e possuem sinais opostos. Fisicamente, esta diferença de sinal significa que um elemento focalizador que focaliza em $x$ automaticamente desfocaliza em $z$, e vice-versa.

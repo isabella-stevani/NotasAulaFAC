@@ -1,8 +1,8 @@
-\subsection{Trajetórias betatron}
+\subsection{Trajetórias betatron}\label{sec:2.5}
 As equações \eqref{eq:2.20} e \eqref{eq:2.27} descrevem as oscilações betatron vertical e radial, respectivamente. Considerando as aproximações feitas, o movimento em cada coordenada é independente. Logo, como $K_x(s)$ e $K_z(s)$ tem a mesma forma matemática, toma-se a forma representativa
 	
 \begin{align}
-	x'' = K(s) \; x \label{eq:2.31}
+	x'' = -K(s) \; x \label{eq:2.31}
 \end{align}
 	
 Lembrando que $K_x(s)$ descreve a oscilação betatron radial de um elétron com energia nominal $E_0$ e $K_z(s)$ descreve o movimento vertical.
@@ -11,9 +11,9 @@ A função de focalização $K(s)$ é definida em cada coordenada $s$ pelo desig
 
 \begin{align}
 	\left\{\begin{array}{l}
-	K<0: \ \ x = a\ \cos(\sqrt{-K}s+b) \\
+	K>0: \ \ x = a\ \cos(\sqrt{K}s+b) \\
 	K=0: \ \ x = as+b \\
-	K>0: \ \ x = a\ \cosh(\sqrt{K}s+b)
+	K<0: \ \ x = a\ \cosh(\sqrt{-K}s+b)
 	\end{array}\right. \label{eq:2.32}
 \end{align}
 onde $a$ e $b$ são constantes em cada segmento e podem ser determinadas pelos valores de $x$ e $x'$ na entrada do segmento (como $K$ é finita em qualquer ponto, $x$ e $x'$ devem ser ambas contínuas em todo ponto -- em particular, na junção entre dois segmentos).
@@ -21,53 +21,53 @@ onde $a$ e $b$ são constantes em cada segmento e podem ser determinadas pelos v
 \begin{proof}
 	A equação \eqref{eq:2.31} é uma equação diferencial homogênea de 2ª ordem. Considerando que a função $K$ é uma constante, supõe-se que a solução da EDO é uma exponencial, 		ou seja, da forma $x=e^{rs}$. Substituindo esta possível solução, tem-se
 	\begin{align*}
-		x'' - Kx &=0\\
-		(e^{rs})'' - K(e^{rs}) &= 0\\
-		r^2e^{rs} - Ke^{rs}&=0\\
-		(r^2 - K)e^{rs} &=0\\
-		e^{rs} \neq 0 \therefore r^2 - K &= 0
+		x'' + Kx &=0\\
+		(e^{rs})'' + K(e^{rs}) &= 0\\
+		r^2e^{rs} + Ke^{rs}&=0\\
+		(r^2 + K)e^{rs} &=0\\
+		e^{rs} \neq 0 \therefore r^2 + K &= 0
 	\end{align*}
 	
-	A equação $r^2 - K = 0$ é a equação característica da EDO. Resolvendo-a, tem-se $r = \pm \sqrt{K}$, então $x_{1,2} = e^{\pm\sqrt{K}s}$. Agora, existem 3 casos possíveis:
+	A equação $r^2 + K = 0$ é a equação característica da EDO. Resolvendo-a, tem-se $r = \pm \sqrt{-K}$, então $x_{1,2} = e^{\pm\sqrt{-K}s}$. Agora, existem 3 casos possíveis:
 	\begin{itemize}
-		\item $K<0$\\
+		\item $K>0$\\
 			
 		Com $K<0$, as raízes da equação característica são imaginárias. A solução geral da EDO é, para este caso, $x = c_1e^{\alpha s}\cos(\beta s) + c_2e^{\alpha s}\sin(\beta s)$. Como a função seno é apenas a função cosseno com uma diferença de fase, pode-se escrever
         \begin{align*}
-        	x = a \ \cos(\sqrt{-K}+b)
+        	x = a \ \cos(\sqrt{K}+b)
         \end{align*}
 			
 		\item $K = 0$\\
 		
 		A solução geral da EDO é, para este caso, $x = c_1e^{\sqrt{K}s} + sc_2e^{-\sqrt{K}s}$. Como $K=0$, 
 		\begin{align*}
-            x &= c_1e^{\sqrt{K}s} + sc_2e^{-\sqrt{K}s}\\
+            x &= c_1e^{\sqrt{K}s} + sc_2e^{\sqrt{K}s}\\
             x &= c_1e^{0s} + sc_2e^{0s}\\
             x &= c_1 + sc_2
 		\end{align*}
 		
 		Renomeando as constantes, $x = as + b$.
 
-		\item $K > 0$\\
+		\item $K < 0$\\
 				
-		A solução geral da EDO é, para este caso, $x = c_1e^{\sqrt{K}s} + c_2e^{-\sqrt{K}s}$. Fazendo $c_1=c_2=\frac{1}{2}$,
+		A solução geral da EDO é, para este caso, $x = c_1e^{\sqrt{-K}s} + c_2e^{-\sqrt{-K}s}$. Fazendo $c_1=c_2=\frac{1}{2}$,
 		\begin{align*}
-            x &= c_1e^{\sqrt{K}s} + c_2e^{-\sqrt{K}s}\\
-            x &= \frac{e^{\sqrt{K}s} + e^{-\sqrt{K}s}}{2} = cosh(\sqrt{K}x)
+            x &= c_1e^{\sqrt{-K}s} + c_2e^{-\sqrt{-K}s}\\
+            x &= \frac{e^{\sqrt{-K}s} + e^{-\sqrt{-K}s}}{2} = cosh(\sqrt{-K}x)
 		\end{align*}
 				
 		Para constantes $c_1$ e $c_2$ arbitrárias,
 		\begin{align*}
-          x = a \ cosh(\sqrt{K}x + b)
+          x = a \ cosh(\sqrt{-K}x + b)
 		\end{align*}
 	\end{itemize}
 	
 	Concluindo,
 	\begin{align*}
         \left\{\begin{array}{l}
-        K<0: \ \ x = a\ \cos(\sqrt{-K}s+b) \\
+        K>0: \ \ x = a\ \cos(\sqrt{K}s+b) \\
         K=0: \ \ x = as+b \\
-        K>0: \ \ x = a\ \cosh(\sqrt{K}s+b)
+        K<0: \ \ x = a\ \cosh(\sqrt{-K}s+b)
         \end{array}\right.
 	\end{align*}
 \end{proof}
@@ -189,32 +189,32 @@ $\boldsymbol{M}(s,s_0)$ é a matriz de transferência de $s_0$ para $s$, a qual 
 Para os três casos possíveis de $K$ descritos na equação \eqref{eq:2.32},
 	
 \begin{align}
-	K<0: \ \ \boldsymbol{M}(s_2,s_1) &= \begin{bmatrix}
-	\cos(\sqrt{-K}\ell) & \frac{1}{\sqrt{-K}}\sin(\sqrt{-K}\ell)\\
-	-\sqrt{-K}\sin(\sqrt{-K}\ell) & \cos(\sqrt{-K}\ell)
+	K>0: \ \ \boldsymbol{M}(s_2,s_1) &= \begin{bmatrix}
+	\cos(\sqrt{K}\ell) & \frac{1}{\sqrt{K}}\ sen(\sqrt{K}\ell)\\
+	-\sqrt{K}\ sen(\sqrt{K}\ell) & \cos(\sqrt{K}\ell)
 	\end{bmatrix}\\
 	K=0: \ \ \boldsymbol{M}(s_2,s_1) &= \begin{bmatrix}
 		1 & \ell\\
 		0 & 1
 		\end{bmatrix}\\
-	K>0: \ \ \boldsymbol{M}(s_2,s_1) &= \begin{bmatrix}
-		\cosh(\sqrt{K}\ell) & \frac{1}{\sqrt{K}}\sinh(\sqrt{K}\ell)\\
-		\sqrt{K}\sinh(\sqrt{K}\ell) & \cosh(\sqrt{K}\ell)
+	K<0: \ \ \boldsymbol{M}(s_2,s_1) &= \begin{bmatrix}
+		\cosh(\sqrt{-K}\ell) & \frac{1}{\sqrt{-K}}\ senh(\sqrt{-K}\ell)\\
+		\sqrt{-K}\sinh(\sqrt{-K}\ell) & \cosh(\sqrt{-K}\ell)
 		\end{bmatrix}
 \end{align}
 onde $\ell = s_2-s_1$.
 	
 \begin{proof}Analisando para os três casos de $K$:
 	\begin{itemize}
-	\item $K<0$\\
+	\item $K>0$\\
 	
-	Da equação \eqref{eq:2.32}, tem-se que $C(s_2,s_1) = \cos(\sqrt{-K}\ell)$. Logo,
+	Da equação \eqref{eq:2.32}, tem-se que $C(s_2,s_1) = \cos(\sqrt{K}\ell)$. Logo,
 	\begin{align*}
-        C'(s_2,s_1) &= \frac{d\ \cos(\sqrt{-K}\ell)}{d\ell} = -\sqrt{-K}\sin(\sqrt{-K}\ell)\\
-        S(s_2,s_1) &= \int \cos(\sqrt{-K}\ell)d\ell = \frac{1}{\sqrt{-K}}\sin(\sqrt{-K}\ell)\\
+        C'(s_2,s_1) &= \frac{d\ \cos(\sqrt{K}\ell)}{d\ell} = -\sqrt{K}\sin(\sqrt{K}\ell)\\
+        S(s_2,s_1) &= \int \cos(\sqrt{K}\ell)d\ell = \frac{1}{\sqrt{K}}\sin(\sqrt{K}\ell)\\
         \therefore \boldsymbol{M}(s_2,s_1) &= \begin{bmatrix}
-            \cos(\sqrt{-K}\ell) & \frac{1}{\sqrt{-K}}\sin(\sqrt{-K}\ell)\\
-            -\sqrt{-K}\sin(\sqrt{-K}\ell) & \cos(\sqrt{-K}\ell)
+            \cos(\sqrt{K}\ell) & \frac{1}{\sqrt{K}}\ sen(\sqrt{K}\ell)\\
+            -\sqrt{K}\ sen(\sqrt{K}\ell) & \cos(\sqrt{K}\ell)
             \end{bmatrix}
 	\end{align*}
 	\item $K=0$\\
@@ -228,15 +228,15 @@ onde $\ell = s_2-s_1$.
 				0 & 1
 				\end{bmatrix}
 	\end{align*}
-	\item $K>0$\\
+	\item $K<0$\\
 	
-	Da equação \eqref{eq:2.32}, tem-se que $C(s_2,s_1) = \cosh(\sqrt{K}\ell)$. Logo,
+	Da equação \eqref{eq:2.32}, tem-se que $C(s_2,s_1) = \cosh(\sqrt{-K}\ell)$. Logo,
 		\begin{align*}
-        	C'(s_2,s_1) &= \frac{d\ \cosh(\sqrt{K}\ell)}{d\ell} = \sqrt{K}senh(\sqrt{K}\ell)\\
-            S(s_2,s_1) &= \int \cosh(\sqrt{K}\ell)d\ell = \frac{1}{\sqrt{K}}senh(\sqrt{K}\ell)\\
+        	C'(s_2,s_1) &= \frac{d\ \cosh(\sqrt{-K}\ell)}{d\ell} = \sqrt{-K}senh(\sqrt{-K}\ell)\\
+            S(s_2,s_1) &= \int \cosh(\sqrt{-K}\ell)d\ell = \frac{1}{\sqrt{-K}}senh(\sqrt{-K}\ell)\\
             \therefore \boldsymbol{M}(s_2,s_1) &= \begin{bmatrix}
-            \cosh(\sqrt{K}\ell) & \frac{1}{\sqrt{K}}\sinh(\sqrt{K}\ell)\\
-            \sqrt{K}\sinh(\sqrt{K}\ell) & \cosh(\sqrt{K}\ell)
+            \cosh(\sqrt{-K}\ell) & \frac{1}{\sqrt{-K}}\ senh(\sqrt{-K}\ell)\\
+            \sqrt{-K}\ senh(\sqrt{-K}\ell) & \cosh(\sqrt{-K}\ell)
             \end{bmatrix}
 		\end{align*}
 	\end{itemize}
@@ -245,9 +245,9 @@ onde $\ell = s_2-s_1$.
 A solução geral da equação \eqref{eq:2.31} pode ser escrita como
 	
 \begin{align}
-	x(s) = a\zeta(s)\ cos\{\varphi(s)-\upsilon\}\label{eq:2.39}
+	x(s) = a\zeta(s)\ cos\{\varphi(s)-\vartheta\}\label{eq:2.39}
 \end{align}
-onde $\zeta(s)$ e $\varphi(s)$ são funções especialmente definidas em $s$ com certas propriedades convenientes, e $a$ e $\upsilon$ são constantes obtidas pelas condições iniciais, as quais determinam uma trajetória particular. Define-se
+onde $\zeta(s)$ e $\varphi(s)$ são funções especialmente definidas em $s$ com certas propriedades convenientes, e $a$ e $\vartheta$ são constantes obtidas pelas condições iniciais, as quais determinam uma trajetória particular. Define-se
 	
 \begin{align}
 	\varphi(s) = \int_{0}^{s} \frac{d\bar{s}}{\zeta^2(\bar{s})}
@@ -259,27 +259,27 @@ Então
 \end{align}
 e, se $\zeta(s)$ for definida para ser essa função positiva, analítica que satisfaz
 \begin{align}
-	\zeta'' = K(s)\zeta+\frac{1}{\zeta^3}\label{eq:2.41}
+	\zeta'' = -K(s)\zeta+\frac{1}{\zeta^3}\label{eq:2.41}
 \end{align}
 então $x(s)$ da equação \eqref{eq:2.39} satisfaz a equação diferencial \eqref{eq:2.31}.
 	
 \begin{proof}
 	Seja $x(s)$ dado pela equação \eqref{eq:2.39}. Então,
 	\begin{align*}
-        x' &= [a\zeta\ \cos\{\varphi-\upsilon\}]'\\
-        &= a[\zeta'\cos(\varphi-\upsilon)-\zeta\varphi'\sin(\varphi-\upsilon)]\\
-        \therefore x'' &= a[\zeta'\cos(\varphi-\upsilon)-\zeta\varphi'\sin(\varphi-\upsilon)]'\\
-        &= a\left[\zeta''\cos(\varphi-\upsilon)-\zeta'\varphi'\sin(\varphi-\upsilon) - \left(-\frac{\zeta'}{\zeta^2}\sin(\varphi-\upsilon)+\frac{\varphi'}{\zeta}\cos(\varphi-\upsilon)\right)\right]
+        x' &= [a\zeta\ \cos\{\varphi-\vartheta\}]'\\
+        &= a[\zeta'\cos(\varphi-\vartheta)-\zeta\varphi'\sin(\varphi-\vartheta)]\\
+        \therefore x'' &= a[\zeta'\cos(\varphi-\vartheta)-\zeta\varphi'\sin(\varphi-\vartheta)]'\\
+        &= a\left[\zeta''\cos(\varphi-\vartheta)-\zeta'\varphi'\sin(\varphi-\vartheta) - \left(-\frac{\zeta'}{\zeta^2}\sin(\varphi-\vartheta)+\frac{\varphi'}{\zeta}\cos(\varphi-\vartheta)\right)\right]
 	\end{align*}
 	
 	Pela equação \eqref{eq:2.41}, 
 	\begin{align*}
-        x'' &= a\left[\left(K\zeta+\frac{1}{\zeta^3}\right)\cos(\varphi-\upsilon)-\frac{\zeta'}{\zeta^2}\sin(\varphi-\upsilon) + \frac{\zeta'}{\zeta^2}\sin(\varphi-\upsilon)-\frac{1}{\zeta^3}\cos(\varphi-\upsilon)\right]\\
-        &= Ka\zeta\ \cos(\varphi-\upsilon)\\
-        &= Kx
+        x'' &= a\left[\left(-K\zeta+\frac{1}{\zeta^3}\right)\cos(\varphi-\vartheta)-\frac{\zeta'}{\zeta^2}\sin(\varphi-\vartheta) + \frac{\zeta'}{\zeta^2}\sin(\varphi-\vartheta)-\frac{1}{\zeta^3}\cos(\varphi-\vartheta)\right]\\
+        &= -Ka\zeta\ \cos(\varphi-\vartheta)\\
+        &= -Kx
 	\end{align*}
 	
-	Assim, pode-se ver que $x(s) = a\zeta(s)\ \cos\{\varphi(s)-\upsilon\}$ é solução da equação diferencial \eqref{eq:2.31}.
+	Assim, pode-se ver que $x(s) = a\zeta(s)\ \cos\{\varphi(s)-\vartheta\}$ é solução da equação diferencial \eqref{eq:2.31}.
 \end{proof}
 	
 Tradicionalmente, define-se a função betatron $\beta(s)$ como
@@ -288,7 +288,7 @@ Tradicionalmente, define-se a função betatron $\beta(s)$ como
 \end{align}
 então
 \begin{align}
-	x(s) &= a\sqrt{\beta(s)}\ \cos\{\varphi(s)-\upsilon\}\label{eq:2.43}\\
+	x(s) &= a\sqrt{\beta(s)}\ \cos\{\varphi(s)-\vartheta\}\label{eq:2.43}\\
 	\varphi(s) &= \int_{0}^{s} \frac{d\bar{s}}{\beta(\bar{s})}\label{eq:2.44}
 \end{align}
 	
