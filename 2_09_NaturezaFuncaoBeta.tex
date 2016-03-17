@@ -1,4 +1,4 @@
-\subsection{Natureza da função beta}
+\subsection{Natureza da função beta}\label{sec:2.9}
 Qual é a forma desejada de $\beta(s)$? Já foi visto que, pelo menos em alguns aspectos, pequenos valores de $\beta$ (focalização forte) são desejados -- tal que $\beta$ seja razoavelmente uniforme. Infelizmente, pequenos valores de $\beta$ só podem ser obtidos alternando o gradiente de focalização, o que tende a gerar oscilações razoavelmente grandes em $\beta$. Além disso, pequenos valores de $\beta$ implicam em grandes valores de $\nu$, o que pode gerar maiores dificuldades ao se lidar com as ressonâncias. Normalmente, $\beta$ tem um valor típico entre $1/2$ e $1/6$ do raio de curvatura $R$, não tendo, assim, oscilações muito extremas.
 
 A função betatron é definida pela função singular, contínua a qual sua raiz quadrada satisfaz
@@ -9,9 +9,9 @@ onde $K(s)$ é a função de focalização. Tipicamente, os anéis modernos são
 
 A imposição de que $\zeta(s)$ tem que ser periódica, juntamente com o termo não linear $1/\zeta^3$, gera uma especificação única -- incluindo a escala. A função $\zeta(s)$ é a função própria da equação \eqref{eq:2.74} e, por causa da não-linearidade, não existe uma normalização arbitrária da amplitude.
 
-Fazendo uma análise dimensional, espera-se que $\zeta$ tenha uma dimensão $|K|^\frac{-1}{4}$, ou que $\beta$ tenha uma dimensão $|K|^\frac{-1}{2}$. (Relembrando que $1/\beta$ é como se fosse a frequência da oscilação, é esperado que esta esteja de acordo com a raiz da constante da força restauradora). Para uma dada geometria do campo, esta lei de escala é grosseiramente verdadeira. Ela é estritamente verdadeira se a escala do comprimento da geometria de focalização é escalada em $|K|^\frac{-1}{2}$, o que geralmente é válido em campos guia bem projetados.
+Fazendo uma análise dimensional, espera-se que $\zeta$ tenha uma dimensão $|K|^\frac{-1}{4}$, ou que $\beta$ tenha uma dimensão $|K|^\frac{-1}{2}$. (Relembrando que $1/\beta$ é como se fosse a frequência da oscilação, então é esperado que esta esteja de acordo com a raiz da constante da força restauradora). Para uma dada geometria do campo, esta lei de escala é grosseiramente verdadeira. Ela é estritamente verdadeira se a escala do comprimento da geometria de focalização é escalada em $|K|^\frac{-1}{2}$, o que geralmente é válido em campos guia bem projetados.
 
-Em uma região de $s$ em que $K(s)$ é constante, , a equação \eqref{eq:2.74} tem a forma da equação de movimento de uma partícula sob o efeito de uma força restauradora $-K\zeta$ e uma força repulsiva $1/\zeta^3$. Ou, da mesma forma, uma partícula que se move com uma energia potencial proporcional a
+Em uma região de $s$ em que $K(s)$ é constante, a equação \eqref{eq:2.74} tem a forma da equação de movimento de uma partícula sob o efeito de uma força restauradora $-K\zeta$ e uma força repulsiva $1/\zeta^3$. Ou, da mesma forma, uma partícula que se move com uma energia potencial proporcional a
 \begin{align}
 	K\zeta^2 + \frac{1}{\zeta^2}
 \end{align}
@@ -24,7 +24,7 @@ Em uma região de $s$ em que $K(s)$ é constante, , a equação \eqref{eq:2.74} 
 	\label{fig:fig16}
 \end{figure}
 
-Em qualquer região onde $K\leq 0$, a aceleração em $\zeta$ (o desvio da partícula de referência) é sempre positiva; e $\zeta$ direcionado sempre para valores maiores -- ou, claro, dar a volta caso sua velocidade inicial seja na direção da origem de $\zeta$. Para $K$ negativo, a força direcional é, em grandes valores de $\zeta$, proporcional ao tamanho de $K$. Por outro lado, em qualquer região onde $K>0$, haverá um potencial estável e, quando $\zeta$ assume grandes valores, sempre há uma força direcionando $\zeta$ para a origem.
+Em qualquer região onde $K\leq 0$, a aceleração em $\zeta$ (o desvio da partícula de referência) é sempre positiva; e $\zeta$ é direcionado sempre para valores maiores -- ou, claro, dar a volta caso sua velocidade inicial seja na direção da origem de $\zeta$. Para $K$ negativo, a força direcional é, em grandes valores de $\zeta$, proporcional ao tamanho de $K$. Por outro lado, em qualquer região onde $K>0$, haverá um potencial estável e, quando $\zeta$ assume grandes valores, sempre há uma força direcionando $\zeta$ para a origem.
 
 Também é qualitativamente aparente que possa existir soluções estáveis onde $\zeta(s)$ entra numa região onde $K<0$ movendo-se em direção à origem e muda de sentido devido à força de repulsão apenas para ser mandado na direção da origem novamente pela força de atração numa região posterior onde $K>0$. Para um K periódico como o da \autoref{fig:fig17}(a), deve-se esperar uma solução para $\zeta(s)$ como a curva representada na parte (b). A solução exibe uma importante característica geral da função $\zeta$: seu máximo ocorre em seções focalizadoras -- onde $K>0$ -- e seu mínimo ocorre em seções desfocalizadoras ou neutras -- onde $K \leq 0$.
 
@@ -35,11 +35,11 @@ Também é qualitativamente aparente que possa existir soluções estáveis onde
 	\label{fig:fig17}
 \end{figure}
 
-Também é evidente que para um determinado espaçamento com diferentes valores de $K$, se a magnitude de $K$ aumenta, a amplitude das oscilações irá crescer rapidamente. Menos evidente é o fato de que, conforme a escala de $K$ aumenta, chegará num ponto em que uma solução estável -- isto é, periódica -- para $\zeta(s)$ não existirá mais. Então a força de focalização (magnitude de $K$) e o espaçamento entre os elementos deve ser ajustado em conjunto, gerando a estrutura óptica do anel -- mais conhecido como \textit{lattice}, uma palavra para indicar a geometria dos segmentos.
+Também é evidente que para um determinado espaçamento com diferentes valores de $K$, se a magnitude de $K$ aumenta, a amplitude das oscilações irá crescer rapidamente. Menos evidente é o fato de que, conforme a escala de $K$ aumenta, chegará num ponto em que uma solução estável -- isto é, periódica -- para $\zeta(s)$ não existirá mais. Então a força de focalização (magnitude de $K$) e o espaçamento entre os elementos deve ser ajustado em conjunto, gerando a estrutura óptica do anel -- mais conhecida como \textit{lattice}, uma palavra para indicar a geometria dos segmentos.
 
-Pode ocorrer o questionamento "Por que não apenas tem valores negativos de $K$ em todo $s$? Claramente a estabilidade de $\zeta$ é garantida". Isto não é possível pois quando $K$ é negativo em $x$, ele é automaticamente positivo em $z$, e vice-versa. Detsa forma, fica claro que é necessário alternar o gradiente de focalização.
+Pode ocorrer o questionamento "Por que não apenas ter valores negativos de $K$ em todo $s$? Claramente a estabilidade de $\zeta$ é garantida". Isto não é possível pois quando $K$ é negativo em $x$, ele é automaticamente positivo em $z$, e vice-versa. Desta forma, fica claro que é necessário alternar o gradiente de focalização.
 
-Também deve estar evidente que as oscilações de $\zeta(s)$ -- e, portanto, de $\beta(s)$ -- estarão fora de fase na duas coordenadas transversais: $x$ e $z$. Quando $\zeta)x$ estiver em seu máximo, $\zeta_z$ estará em seu mínimo. Este comportamento é válido até nas estruturas mais complexas -- apesar de não ser totalmente verdade que $\zeta_x$ e $\zeta_z$ tem totalmente a mesma forma. 
+Também deve estar evidente que as oscilações de $\zeta(s)$ -- e, portanto, de $\beta(s)$ -- estarão fora de fase nas duas coordenadas transversais: $x$ e $z$. Quando $\zeta)x$ estiver em seu máximo, $\zeta_z$ estará em seu mínimo. Este comportamento é válido até nas estruturas mais complexas -- apesar de não ser totalmente verdade que $\zeta_x$ e $\zeta_z$ tem totalmente a mesma forma. 
 %Na \autoref{fig:fig18} está um exemplo das funções $\zeta_x$ e $\zeta_z$.
 
 %\begin{figure}[!htb]
@@ -119,7 +119,7 @@ O desvio obtido é proporcional a $\beta(s)$. Apenas resta determinar o fator de
 \end{align}
 Então, conhecendo $S(s+L,s)$ para todo $s$, pode-se determinar $\beta(s)$ de forma única.
 
-O cálculo de $S(s+L,s)$ pode ser efetuado por uma integração numérica da equação de movimento. Ou, para um campo guia uniforme, é também pode ser obtido utilizando o método matricial descrito na \autoref{sec:2.5}. Relembrando a equação \eqref{eq:2.37}, a \textit{sine-like trajectory} de $s_0$ para $s_0+L$ é apenas o elemento da primeira linha e da primeira coluna da matriz de transferência $\boldsymbol{M}(s,s_0)$ para a máquina completa, começando em cada $s_0$.
+O cálculo de $S(s+L,s)$ pode ser efetuado por uma integração numérica da equação de movimento. Ou, para um campo guia uniforme, também pode ser obtido utilizando o método matricial descrito na \autoref{sec:2.5}. Relembrando a equação \eqref{eq:2.37}, a \textit{sine-like trajectory} de $s_0$ para $s_0+L$ é apenas o elemento da primeira linha e da primeira coluna da matriz de transferência $\boldsymbol{M}(s,s_0)$ para a máquina completa, começando em cada $s_0$.
 
 Também pode-se mostrar que a sintonia $\nu$ pode ser obtida pelo traço da matriz para o anel todo:
 \begin{align}
@@ -155,9 +155,92 @@ A partir da equação \eqref{eq:2.80}, podem-se fazer algumas observações. Pri
 \begin{align}
 	\beta = \beta_0\left[1+\frac{(s-s_0)^2}{\beta_0^2}\right]
 \end{align}
-onde $s_0$ e $\beta_0$ são constantes adequadas. Se $\beta$ tem um ponto de mínimo em um trecho reto, então $\beta_0$ e $s_0$ são os valores de $\beta$ e $s$ neste mínimo. Sua forma é ilustrada na \autoref{fig:fig20}. Note que o coeficiente do termo quadrático é o inverso do valor de $\beta$ no seu ponto mínimo -- quanto menor for $\beta_0$. mais rápido é o aumento de $\beta$ com o aumento da distância do ponto de mínimo.
+onde $s_0$ e $\beta_0$ são constantes adequadas. Se $\beta$ tem um ponto de mínimo em um trecho reto, então $\beta_0$ e $s_0$ são os valores de $\beta$ e $s$ neste mínimo.
 
-Finalmente, observe que em um segmente que $K$ é grande e $\beta'$ pequeno, a equação \eqref{eq:2.80} pode ser aproximada por
+\begin{proof}
+	A equação diferencial a ser resolvida é
+	\begin{align*}
+		\frac{1}{2}\beta\beta'' - \left(\frac{\beta'}{2}\right)^2
+	\end{align*}
+	Esta é uma equação diferencial ordinária não-linear de segunda ordem. Esta também é uma equação autônoma, ou seja, é uma equação que não contem explicitamente a variável independente -- neste caso, a coordenada $s$. Com isso, pode-se tratar a variável $\beta$ como variável independente da equação, e definir uma segunda variável $\alpha$ tal que
+	\begin{align*}
+		\alpha(\beta) = -\frac{\beta'}{2}
+	\end{align*}
+	Desta forma,
+	\begin{align*}
+		\beta' = -2\alpha(\beta)
+		\therefore \beta'' = -2\frac{d\alpha}{d \beta}\beta' = -2\frac{d\alpha}{d \beta}(-2\alpha) = 4\alpha\frac{d\alpha}{d\beta}
+	\end{align*}
+	Substituindo na equação diferencial,
+	\begin{align*}
+		2\alpha\beta\frac{d\alpha}{d\beta} &= 1 + \alpha^2\\
+		\therefore \frac{2\alpha}{1+\alpha^2}d\alpha &= \frac{1}{\beta}d\beta
+	\end{align*}
+	Integrando ambos os lados da equação:
+	\begin{align*}
+		\int \frac{2\alpha}{1+\alpha^2}d\alpha &= \int \frac{d\beta}{\beta}\\
+		ln(1+\alpha^2) &= ln(\beta) + c_1\\
+		ln(1+\alpha^2) - ln(\beta) &= c_1\\
+		ln\left(\frac{1+\alpha^2}{\beta}\right) &= c_1
+	\end{align*}
+	sendo $c_1$ uma constante qualquer. Pela definição de logaritmo,
+	\begin{align*}
+		\frac{1+\alpha^2}{\beta} &= c_2
+	\end{align*}
+	sendo $c_2$ a constante dada por $e^{c_1}$. Derivando ambos os lados da expressão:
+	\begin{align*}
+		\frac{d}{d\beta}\left(\frac{1+\alpha^2}{\beta}\right) = 0
+	\end{align*}
+	Integrando esta equação diferencial de $\beta_0$ a $\beta$, tem-se
+	\begin{align*}
+		\frac{1+\alpha^2}{\beta} - \frac{1+\alpha_0^2}{\beta_0} = 0
+	\end{align*}
+	Definindo a constante $\gamma_0 = \frac{1+\alpha_0^2}{\beta_0}$, tem-se que
+	\begin{align*}
+		\frac{1+\alpha^2}{\beta} - \gamma_0 &= 0\\
+		\frac{1+\alpha^2}{\beta} &= \gamma_0\\
+		1+\alpha^2 &= \beta \gamma_0\\
+		\therefore \alpha &= \sqrt{\beta\gamma_0 -1}
+	\end{align*}
+	Mas $\alpha = -\beta'/2$. Então,
+	\begin{align*}
+		-\frac{1}{2}\frac{d\beta}{ds} &= \sqrt{\beta\gamma_0 -1}\\
+		\therefore -\frac{d\beta}{2\sqrt{\beta\gamma_0 -1}} &= ds
+	\end{align*}
+	Integrando ambos os lados da equação:
+	\begin{align*}
+		\int\limits_{\beta_0}^{\beta}-\frac{d\beta}{2\sqrt{\beta\gamma_0 -1}} &= \int\limits_{s_0}^{s}ds\\
+		\left.\begin{matrix}
+		-\frac{1}{\gamma_0}\sqrt{\beta\gamma_0-1}
+		\end{matrix}\ \right|^\beta_{\beta_0} &= \left.\begin{matrix}
+				s
+				\end{matrix}\ \right|^s_{s_0}\\
+		-\frac{1}{\gamma_0}\left(\sqrt{\beta\gamma_0-1}-\sqrt{\beta_0\gamma_0-1}\right) &= s-s_0\\
+		\frac{1}{\gamma_0}\left(\sqrt{\beta_0\gamma_0-1}-\sqrt{\beta\gamma_0-1}\right) &= s-s_0\\
+		\sqrt{\beta_0\gamma_0-1}-\sqrt{\beta\gamma_0-1} &= \gamma_0(s-s_0)
+	\end{align*}
+	Como foi definido anteriormente, $\gamma_0 = \frac{1+\alpha_0^2}{\beta_0}$. Logo,
+	\begin{align*}
+		\sqrt{1-\alpha_0^2-1}-\sqrt{\beta\gamma_0-1} &= \gamma_0(s-s_0)\\
+		-\alpha_0-\sqrt{\beta\gamma_0-1} &= \gamma_0(s-s_0)\\
+		-\sqrt{\beta\gamma_0-1} &= \alpha_0+\gamma_0(s-s_0)\\
+	\end{align*}
+	Elevando ambos os lados da equação ao quadrado:
+	\begin{align*}
+		\beta\gamma_0-1 &= [\alpha_0+\gamma_0(s-s_0)]^2\\
+		\therefore \beta &= \frac{1}{\gamma_0}[1+(\alpha_0+\gamma_0(s-s_0))^2]
+	\end{align*}
+	No ponto de mínimo da função, $\beta'=0$ e, portanto, $\alpha=0$. Substituindo na solução obtida:
+	\begin{align*}
+		\beta &= \beta_0\left[1+\frac{1}{\beta_0^2}(s-s_0)^2\right]
+	\end{align*}
+	c.q.d.
+\end{proof}
+
+A forma desta solução é ilustrada na \autoref{fig:fig20}. Note que o coeficiente do termo quadrático é o inverso do valor de $\beta$ no seu ponto mínimo -- quanto menor for $\beta_0$. mais rápido é o aumento de $\beta$ com o aumento da distância do ponto de mínimo.
+
+
+Finalmente, observe que, em um segmento que $K$ é grande e $\beta'$ pequeno, a equação \eqref{eq:2.80} pode ser aproximada por
 \begin{align}
 	\beta'' = -2K\beta
 \end{align}
@@ -165,7 +248,7 @@ Assim, $\beta$ é uma senoide ou uma exponencial dependendo do sinal de $K$.
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=0.8\linewidth]{./Figuras/fig20.jpeg}
+	\includegraphics[width=0.7\linewidth]{./Figuras/fig20.jpeg}
 	\caption{Variação de $\beta$ próximo do mínimo o qual ocorre em um longo trecho reto (sem campo magnético). Retirado de \cite{sands1970physics}.}
 	\label{fig:fig20}
 \end{figure}
