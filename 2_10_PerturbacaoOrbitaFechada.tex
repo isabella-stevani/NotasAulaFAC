@@ -1,4 +1,4 @@
-\subsection{Perturbação de órbita fechada}
+\subsection{Perturbação de órbita fechada}\label{sec:2.10}
 Até o presente momento, foram consideradas as trajetórias de um elétron em um campo guia pré-definido. Agora, deseja-se considerar a seguinte pergunta: suponha que toda a análise sobre a trajetória dos elétrons foi feita acerca de um campo guia pré-definido; como as trajetórias irão variar se existirem pequenos erros no campo com relação ao campo pré-definido? Considerando a aproximação linear realizada até aqui, o campo guia pré-definido -- ou nominal -- é especificado pelo seu valor na órbita ideal e sua derivada radial. Além disso, assume-se que o campo na órbita ideal é vertical em todo o anel. E se o campo magnético vertical na órbita ideal diferir do seu valor nominal, ou se existirem pequenas componentes horizontais de campo, as acelerações laterais serão diferentes das especificações necessárias para manter o elétron na órbita ideal. Os desvios do campo na órbita ideal serão chamam-se erros de campo, enquanto mudanças no campo que fazem com que as funções de focalização $K_x$ e $K_z$ tenham valores diferentes de seus valores nominais chamam-se erros de gradiente.
 
 Quando existem erros de campo, a órbita ideal deixa de ser uma trajetória possível. Se os erros são pequenos, no entanto, irá existir uma outra órbita fechada a qual é uma trajetória possível a um elétron com energia nominal. Esta trajetória é chamada de órbita fechada. Esta trajetória irá executar as oscilações betatron relativas à órbita fechada. E a forma das oscilações betatron será determinada pelas novas funções de focalização. Isto é, mantendo $x$ como sendo a representação do desvio radial da órbita ideal, este pode ser descrito como
@@ -83,7 +83,7 @@ Depois de $s=0$ não há erro de campo (para uma volta completa) então o elétr
 	\begin{align*}
 		b &= \lambdabar \Delta x'
 	\end{align*}
-	Também na \autopageref{sec:2.8} mostrou-se que $\lambdabar = \beta_n$, então
+	Também na \autoref{sec:2.8} mostrou-se que $\lambdabar = \beta_n$, então
 	\begin{align*}
 		b &= \beta_n \Delta x'\\
 		  &= -\beta_n\ \delta G \Delta s
@@ -191,7 +191,7 @@ Agora o desvio é proporcional à primeira potência de $\beta$, mas a dependên
 
 A equação \eqref{eq:2.92} também pode ser generalizada para uma órbita fechada com erros de campo que seguem uma distribuição arbitrária ao longo do anel. Em cada coordenada $s$, os desvios da órbita fechada causados por erros em todas as outras coordenadas irão se somar. Para um erro em $\bar{s}$, deve-se substituir $s=0$ por $\bar{s}$ na equação \eqref{eq:2.92} -- e, ao mesmo tempo, substituir $\varphi(s)$ por $|\varphi(s) - \varphi\bar{s}|$. Assim, somando sobre todos os $\Delta \bar{s}$, tem-se 
 \begin{align}
-	x_c(s) = -\frac{\sqrt{\beta(s)}}{2sen(\pi\nu)}\int\limits_{0}^{L}\delta G(\bar{s})\sqrt{\beta(\bar{s})}cos(|\varphi(s)-\varphi(\bar{s})|-\pi\nu)d\bar{s}
+	x_c(s) = -\frac{\sqrt{\beta(s)}}{2sen(\pi\nu)}\int\limits_{0}^{L}\delta G(\bar{s})\sqrt{\beta(\bar{s})}cos(|\varphi(s)-\varphi(\bar{s})|-\pi\nu)d\bar{s}\label{eq:2.94}
 \end{align}
 Se o desvio de campo $\delta G(s)$ é conhecido, esta equação dará a forma da órbita fechada (considerando os valores nominais de $\beta(s)$ e $\nu$).
 
