@@ -1,9 +1,9 @@
-\subsection{Erros de gradiente de campo}
-Agora, pode-se analisar os efeitos dos erros de gradiente nas oscilações betatron em torno da órbita ideal. estes "erros" são relativos aos desvios da função de focalização $K(s)$ do seu valor nominal em cada coordenada $s$. Pode-se escrever
+\subsection{Erros de gradiente de campo}\label{sec:2.11}
+Agora, pode-se analisar os efeitos dos erros de gradiente nas oscilações betatron em torno da órbita ideal. Estes "erros" são relativos aos desvios da função de focalização $K(s)$ do seu valor nominal em cada coordenada $s$. Pode-se escrever
 \begin{align*}
 	K(s)_{atual} = K(s)_{nominal} + k(s)
 \end{align*}
-onde assume-se que $k(s)$ é pequeno. O efeito do desvio $k(s)$ será mudar a função betatron do seu valor nominal $\beta(s)$ para um novo valor $\beta(s)+\Delta \beta(s)$. Desta forma, a sintonia também será alterada do seu valor nominal $\nu$ para um novo valor $\nu + \Delta \nu$. Geralmente, a mudança de sintonia $\Delta \nu$ é mais preocupante, uma vez que esta pequena mudança pode fazer com que o ponto de operação da máquina entra em uma ressonância.
+onde assume-se que $k(s)$ é pequeno. O efeito do desvio $k(s)$ será mudar a função betatron do seu valor nominal $\beta(s)$ para um novo valor $\beta(s)+\Delta \beta(s)$. Desta forma, a sintonia também será alterada do seu valor nominal $\nu$ para um novo valor $\nu + \Delta \nu$. Geralmente, a mudança de sintonia $\Delta \nu$ é mais preocupante, uma vez que esta pequena mudança pode fazer com que o ponto de operação da máquina entre em uma ressonância.
 
 Suponha que existe um erro de gradiente $k$ apenas em um pequeno intervalo $\Delta s$ em $s=0$. Então um elétron que passa em $s=0$ irá receber um \textit{kick} angular extra $\Delta x'$ proporcional ao seu desvio $x$. Isto é,
 \begin{align}
@@ -26,7 +26,7 @@ Suponha que existe um erro de gradiente $k$ apenas em um pequeno intervalo $\Del
 	\end{align*}
 \end{proof}
 
-Aproximando novamente a função betatron por uma simples oscilação harmônica, o que aconteceria se um elétron chegasse em $s=0$ no pico da oscilação? o movimento seria como a curva representada na \autoref{fig:fig23}.
+Aproximando novamente a função betatron por uma simples oscilação harmônica, o que aconteceria se um elétron chegasse em $s=0$ no pico da oscilação? O movimento seria como a curva representada na \autoref{fig:fig23}.
 
 \begin{figure}[!htb]
 	\centering
@@ -57,7 +57,7 @@ onde
 	
 	Agora, derivando a expressão $x = b\ cos(s/\beta_n)$, tem-se
 	\begin{align*}
-		x' &= -b\ sen(s/\beta_n)\\
+		x' &= -\frac{b}{\beta_n}\ sen(s/\beta_n)\\
 		\therefore x'(0) &= 0 = x'_i
 	\end{align*}
 	Derivando a expressão $x = (b+\Delta b)\ cos(s/\beta_n + \Delta \varphi)$, tem-se
@@ -88,10 +88,87 @@ O efeito do erro de gradiente é basicamente alterar a fase de oscilação por $
 \end{align}
 O sinal negativo vem do fato de que o avanço total de fase é reduzido.
 
-Este resultado é, na verdade, até duas vezes maior do que o normal. O motivo é que o cálculo de $\Delta \varphi$ foi feito no caso especial do elétron chegando em $s=0$ no pico da oscilação. Se o elétron chegar em $s=0$ com uma fase $\varphi_0$, a mudança de fase $\delta \varphi$ é reduzida por um fator $cos^2(\varphi_0)$. Como $\varphi_0$ assume vários valores ao longo de sucessivas voltas, pode-se esperar que a média de $\Delta \varphi$ seja reduzida pela média de $cos^2(\varphi_0)$, que é apenas $1/2$. Com esta correção, a estimativa de $\Delta \nu$ fica
+Este resultado é, na verdade, até duas vezes maior do que o normal. O motivo é que o cálculo de $\Delta \varphi$ foi feito no caso especial do elétron chegando em $s=0$ no pico da oscilação. Se o elétron chegar em $s=0$ com uma fase $\varphi_0$, a mudança de fase $\Delta \varphi$ é reduzida por um fator $cos^2(\varphi_0)$. Como $\varphi_0$ assume vários valores ao longo de sucessivas voltas, pode-se esperar que a média de $\Delta \varphi$ seja reduzida pela média de $cos^2(\varphi_0)$, que é apenas $1/2$. Com esta correção, a estimativa de $\Delta \nu$ fica
 \begin{align}
 	\Delta \nu = -\frac{1}{4\pi}\beta(s)\ k\ \Delta s
 \end{align}
+
+\begin{proof}
+	Seguindo o mesmo raciocínio da demonstração anterior -- porém considerando um elétron que chega em $s=0$ com uma fase $\varphi_0$ -- tem-se que o movimento do elétron antes do \textit{kick} é dado por $x = b\ cos(s/\beta_n + \varphi_0)$. Logo,
+	\begin{align*}
+		x' &= -\frac{b}{\beta_n}\ sen(s/\beta_n + \varphi_0)\\
+		\therefore x'(0) &= -\frac{b}{\beta_n}\ sen(\varphi_0) = x'_i
+	\end{align*}
+	Depois do \textit{kick}, o movimento do elétron é dado pela expressão $x = (b+\Delta b)\ cos(s/\beta_n + \Delta \varphi + \varphi_0)$. Derivando-a,
+	\begin{align*}
+		x' = -\frac{b+\Delta b}{\beta_n}\ sen(s/\beta_n + \Delta \varphi + \varphi_0)\\
+		x'(0) = -\frac{b+\Delta b}{\beta_n}\ sen(\Delta \varphi + \varphi_0) = x'_f
+	\end{align*}
+	Desta forma, a variação $\Delta x'$ da inclinação do movimento no ponto $s=0$ é
+	\begin{align*}
+		\Delta x' &= x'_f - x'_i\\
+				  &= -\frac{b+\Delta b}{\beta_n}\ sen(\Delta \varphi + \varphi_0) + \frac{b}{\beta_n}\ sen(\varphi_0)
+	\end{align*}
+	Por trigonometria, $sen(\Delta \varphi + \varphi_0) = sen(\Delta \varphi)cos(\varphi_0) + cos(\Delta \varphi)sen(\varphi_0)$. Substituindo:
+	\begin{align*}
+		\Delta x' &= -\frac{b+\Delta b}{\beta_n}\ [sen(\Delta \varphi)cos(\varphi_0) + cos(\Delta \varphi)sen(\varphi_0)] + \frac{b}{\beta_n}\ sen(\varphi_0)
+	\end{align*}
+	Como $\Delta \varphi$ é pequeno, pode-se aproximar $sen(\Delta \varphi) \approx \Delta \varphi$ e $cos(\Delta \varphi) \approx 1$. Logo,
+	\begin{align*}
+		\Delta x' &= -\frac{b+\Delta b}{\beta_n}\ [\Delta \varphi\ cos(\varphi_0) + sen(\varphi_0)] + \frac{b}{\beta_n}\ sen(\varphi_0)\\
+				  &= -\frac{b+\Delta b}{\beta_n}\ \Delta \varphi\ cos(\varphi_0) - \frac{\Delta b}{\beta_n}\ sen(\varphi_0)
+	\end{align*}
+	Descartando o termo de segunda ordem,
+	\begin{align*}
+		\Delta x' &= -\frac{b}{\beta_n}\ \Delta \varphi\ cos(\varphi_0) - \frac{\Delta b}{\beta_n}\ sen(\varphi_0)
+	\end{align*}
+	Agora, pela continuidade do movimento do elétron, tem-se que
+	\begin{align*}
+		b\ cos(\varphi_0) = (b+\Delta b)\ cos(\Delta \varphi + \varphi_0)
+	\end{align*}
+	Por trigonometria, $cos(\Delta \varphi + \varphi_0) = cos(\Delta \varphi)cos(\varphi_0) - sen(\Delta \varphi)sen(\varphi_0)$. Substituindo esta relação e novamente aproximando $sen(\Delta \varphi)$ e $cos(\Delta \varphi)$, tem-se
+	\begin{align*}
+		b\ cos(\varphi_0) = (b+\Delta b)[cos(\varphi_0)-\Delta \varphi\ sen(\varphi)]
+	\end{align*}
+	Manipulando a expressão, tem-se que
+	\begin{align*}
+		\frac{\Delta b}{(b+\Delta b)\Delta \varphi} = tg(\varphi_0)
+	\end{align*}
+	Descartando o termo de segunda ordem:
+	\begin{align*}
+		\frac{\Delta b}{b \Delta \varphi} &= tg(\varphi_0)\\
+		\therefore \Delta b &= b\ \Delta \varphi\ tg(\varphi_0)
+	\end{align*}
+	Substituindo esta relação na expressão de $\Delta x'$, tem-se
+	\begin{align*}
+		\Delta x' &= -\frac{b}{\beta_n}\ \Delta \varphi\ cos(\varphi_0) - \frac{b\ \Delta \varphi\ tg(\varphi_0)}{\beta_n}\ sen(\varphi_0)\\
+				  &= -\frac{b}{\beta_n}\ \Delta \varphi\ cos(\varphi_0) - \frac{b\ \Delta \varphi\ sen^2(\varphi_0)}{\beta_n\ cos(\varphi_0)}
+	\end{align*}
+	Multiplicando ambos os lados da equação por $cos(\varphi_0)$:
+	\begin{align*}
+		cos(\varphi_0)\ \Delta x' &= -\frac{b}{\beta_n}\ \Delta \varphi\ cos^2(\varphi_0) - \frac{b\ \Delta \varphi\ sen^2(\varphi_0)}{\beta_n}\\
+			&= -\frac{b\ \Delta \varphi}{\beta_n}[cos^2(\varphi_0)+sen^2(\varphi_0)]\\
+			&= -\frac{b\ \Delta \varphi}{\beta_n}
+	\end{align*}
+	Da equação \eqref{eq:2.96}, sabe-se que $\Delta x' = -k\ \Delta s\ x$. Logo,
+	\begin{align*}
+		-k\ \Delta s\ x\ cos(\varphi_0) &= -\frac{b\ \Delta \varphi}{\beta_n}
+	\end{align*}
+	Mas, pela aproximação feita, $x = b\ cos(s/\beta_n + \varphi_0)$. Logo, $x(0) = b\ cos(\varphi_0)$. Substituindo,
+	\begin{align*}
+		-k\ \Delta s\ b\ cos^2(\varphi_0) &= -\frac{b\ \Delta \varphi}{\beta_n}\\
+		\therefore \Delta \varphi &= \beta_n\ k\ \Delta s\ cos^2(\varphi_0)
+	\end{align*}
+	Como já foi dito anteriormente,
+	\begin{align*}
+		\Delta \nu \approx - \frac{\Delta \varphi}{2\pi} = -\frac{\beta_n\ k\ \Delta s\ cos^2(\varphi_0)}{2\pi}
+	\end{align*}
+	Na média, $cos^2(\varphi_0) = 1/2$. Logo,
+	\begin{align*}
+		\Delta \nu = -\frac{1}{4\pi}\beta k \Delta s
+	\end{align*}
+	c.q.d.
+\end{proof}
 
 Note que a mudança da sintonia é proporcional ao erro de gradiente em qualquer ponto e ao valor de $\beta$ neste ponto. Novamente, pode-se observar que a função $\beta$ é um indicador da sensibilidade do anel a imperfeições.
 
