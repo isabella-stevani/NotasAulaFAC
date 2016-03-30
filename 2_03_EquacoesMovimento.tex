@@ -30,7 +30,7 @@ e, em um elemento de caminho $d\ell$ da trajetória, a variação do ângulo é
 
 Note que, enquanto o ângulo $x'$ é pequeno -- e pode-se sempre assumir isto desde que apenas termos de primeira ordem sejam considerados, que é o caso -- um elemento de caminho $d\ell$ da trajetória em $x$ é relacionado com a correspondente variação em $s$ por
 \begin{align}
-	d\ell = \frac{\varrho_s = x}{\varrho_s} ds = \left(1+\frac{x}{\varrho_s}\right)ds = (1+G(s))ds\label{eq:2.15}
+	d\ell = \frac{\varrho_s - x}{\varrho_s} ds = \left(1+\frac{x}{\varrho_s}\right)ds = (1+G(s))ds\label{eq:2.15}
 \end{align}
 
 Agora, $B$ pode ser descrito por
@@ -38,7 +38,7 @@ Agora, $B$ pode ser descrito por
 	B = B_0 + \frac{\partial B}{\partial x}x = \frac{E_0}{ec}(G+K_1x)\label{eq:2.16}
 \end{align}
 
-Substituindo as equações \eqref{eq:2.15} e \eqref{eq:2.16} na equação \eqref{eq:2.14} juantamente com $E_0+\epsilon$ para $E$ -- e mantendo apenas termos de primeira ordem -- tem-se que
+Substituindo as equações \eqref{eq:2.15} e \eqref{eq:2.16} na equação \eqref{eq:2.14} juntamente com $E_0+\epsilon$ para $E$ -- e mantendo apenas termos de primeira ordem -- tem-se que
 \begin{align}
 	d\theta = \left\{-G-(G^2+K_1)x + G\frac{\epsilon}{E_0}\right\}ds
 \end{align}
@@ -120,7 +120,7 @@ A equação correspondente para o movimento vertical é
 
 Definindo as funções focalizadoras $K_x$ e $K_z$ como
 \begin{align}
-	K_x(s) &= G^2(s)+K_1(s)\\
+	K_x(s) &= G^2(s)+K_1(s)\label{eq:2.21}\\
 	K_z(s) &= - K_1(s)
 \end{align}
 tem-se que $x''$ e $z''$ podem ser descritos como
@@ -135,9 +135,9 @@ A equação de movimento em $z$ parece a equação de uma oscilação clássica 
 
 Tanto $K_x$ quanto $K_z$ são funções periódicas ao longo do anel, logo
 \begin{align}
-	\left\{\begin{array}{rcl}
+	\begin{array}{rcl}
 	\ K(s+L) & = & K(s)
-	\end{array}\right.
+	\end{array}
 \end{align}
 
 Por conveniência na construção e no design do anel, este possui uma periodicidade intrínseca. Ou seja, é composta por uma sequência de células magnéticas idênticas, cada célula sendo constituída por dipolos e quadrupolos. Então, para um anel com células de comprimento $\ell_c$,
