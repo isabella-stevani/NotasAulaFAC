@@ -11,7 +11,7 @@
 \citebrackets[]
 %\documentclass[a4paper, 12pt, report]{lnls-note} % if you want to have chapters choose this one
 \newcommand{\lambdabar}{\mbox{\textipa{\textcrlambda}}}
-
+\def\mean#1{\left< #1 \right>}
 %loads standard preamble configuration
 \input{./Template/standard_preamble.tex}
 
@@ -59,11 +59,13 @@
 	\input{3_06_GrandesOscilacoes}
 	\pagebreak
 
-\section{Amortecimento por Radiação}\label{sec:4}
+\section[Amortecimento por Radiação]{Amortecimento por Radiação\footnote{Neste capítulo, assume-se que a teoria clássica sobre radiaçao eletromagnética por elétrons relativísticos já é conhecida. Desta forma, apenas uma revisão é feita, pontuando os resultados necessários para este estudo.}}\label{sec:4}
 	\input{4_01_PerdaEnergia}
+	\input{4_02_AmortecimentoEnergia}
 	\pagebreak
 
 \section{Excitação por Radiação}
+	\input{5_01_RadiacaoQuantica}
 	\pagebreak
 
 
