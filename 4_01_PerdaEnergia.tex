@@ -11,7 +11,7 @@ onde $m$ é a massa de repouso do elétron, $r_e$ é o raio clássico do elétro
 \end{align}
 Pela força de Lorentz, $F_\perp = ecB$. Desta forma, a energia radiada é
 \begin{align}
-	P_\gamma = \frac{e^2c^3}{2\pi}C_\gamma E^2 B^2
+	P_\gamma = \frac{e^2c^3}{2\pi}C_\gamma E^2 B^2\label{eq:4.3}
 \end{align}
 Esta potência instantânea é proporcional ao quadrado tanto da energia quanto da força do campo magnético local. Às vezes é útil expressar  a força magnética em termos do raio de curvatura local $\rho$ da trajetória; então
 \begin{align}
@@ -20,7 +20,7 @@ Esta potência instantânea é proporcional ao quadrado tanto da energia quanto 
 
 Um elétron circulando na órbita ideal tem energia nominal $E_0$ e se move com o raio de curvatura $\rho_s = 1/G$ -- veja a \autoref{sec:2.2}. Para encontrar a energia $U_0$ radiada em uma revolução, basta integrar $P_\gamma$ com relação ao tempo  ao longo do anel. Como $dt = ds/c$,
 \begin{align}
-	U_0 = \frac{C_\gamma E_0^4}{2\pi}\int\limits_{0}^{L}G^2(s)ds
+	U_0 = \frac{C_\gamma E_0^4}{2\pi}\int\limits_{0}^{L}G^2(s)ds\label{eq:4.5}
 \end{align}
 
 Pode-se aproximar a integral pela média de $G^2$ multiplicada por $L=2\pi R$, o comprimento do anel:
@@ -33,7 +33,7 @@ Para um campo guia isomagnético\footnote{Veja a \autoref{sec:2.2}.} $G = G_0=1/
 \end{align}
 e
 \begin{align}
-	U_0 = \frac{C_\gamma E_0^4}{\rho_0}
+	U_0 = \frac{C_\gamma E_0^4}{\rho_0}\ \ (isomag)
 \end{align}
 \begin{proof}
 	A aproximação feita anteriormente foi
@@ -65,4 +65,4 @@ Um elétron que não está na órbita ideal perde energia a uma taxa diferente. 
 
 O mesmo não é verdadeiro para um elétron com energia diferente de $E_0$. Este caso será analisado a seguir.
 
-Para elétrons ultra-relativísticos, a radiação é emitida em primitivamente na direção do movimento. A maioria da radiação é emitida com um ângulo $1/\gamma$. A força de reação da radiação -- e, portanto, a mudança de momento associada -- é exatamente na direção oposta do movimento\footnote{Desprezando efeitos quãnticos. Veja a \autoref{sec:5.1}.}. O único efeito da radiação é diminuir a energia do elétron, sem mudar a direção do seu movimento.
+Para elétrons ultra-relativísticos, a radiação é emitida em primitivamente na direção do movimento. A maioria da radiação é emitida com um ângulo $1/\gamma$. A força de reação da radiação -- e, portanto, a mudança de momento associada -- é exatamente na direção oposta do movimento\footnote{Desprezando efeitos quânticos. Veja a \autoref{sec:5.1}.}. O único efeito da radiação é diminuir a energia do elétron, sem mudar a direção do seu movimento.
