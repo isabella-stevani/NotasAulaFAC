@@ -1,0 +1,34 @@
+\subsection{Taxas de amortecimento por radiação}\label{sec:4.4}
+Efeitos de amortecimento por radiação já foram considerados sobre os três graus de liberdade de um elétron em um \textit{bunch}: os dois deslocamentos betatron transversais $x_\beta$ e $z_\beta$ e as oscilações de energia -- as quais apareceram associadas às oscilações de $\tau$ e $x_\epsilon$. Cada um dos três modos de oscilação possui um decaimento exponencial natural com coeficientes de amortecimento $\alpha_i$ (com $i=x,z,\epsilon$) que podem ser convenientemente expressados como
+\begin{align}
+	\alpha_i = J_i \alpha_0 = J_i\frac{P_\gamma}{2E_0}
+\end{align}
+com
+\begin{align}
+	J_x=1-\mathscr{D}\ \ \ \ \ J_z=1\ \ \ \ \ J_\epsilon=2+\mathscr{D}\label{eq:4.52}
+\end{align}
+As constantes de tempo de amortecimento são apenas $1/\alpha_i$, então
+\begin{align}
+	\tau_i = \frac{2E_0}{J_i \mean{P_\gamma}}
+\end{align}
+
+Para um anel de armazenamento isomagnético, $\mean{P_\gamma}$ pode ser dado pela equação \eqref{eq:4.10} e $\tau_i$ dado por
+\begin{align}
+	\tau_i = \frac{4\pi}{C_\gamma}\frac{R\rho_0}{J_i E_0^3}\ \ (isomag.)
+\end{align}
+onde $C_\gamma$ é a constante definida na equação \eqref{eq:4.2}. Neste tipo de máquina, as constantes de tempo de amortecimento variam com o inverso do cubo da energia.
+
+O número $\mathscr{D}$ é uma propriedade do campo guia e pode ser avaliado por uma das equações \eqref{eq:4.17}, \eqref{eq:4.20} ou \eqref{eq:4.22}. Os números $J_i$ são conhecidos como números de partição de radiação já que sua soma é uma constante:
+\begin{align}
+	\sum J_i = J_x + J_z + J_\epsilon = 4\label{eq:4.55}
+\end{align}
+
+Apesar deste último resultado não ter sido provado de forma rigorosa, ele vem do cálculo detalhado para um campo guia qualquer. Estes cálculos não são, porém, necessários pois o Teorema de Robinson prova, em termos bem generalistas, que o teorema da equação \eqref{eq:4.55} é verdadeiro. O teorema pede apenas que todos os campos agindo sobre a partícula sejam determinados a priori e não sejam influenciados pelo movimento do elétron. Estas condições são verdadeiras se apenas os ímãs e campos de RF prescritos do anel forem considerados.
+
+As taxas de amortecimento para apenas um elétron -- e, mais importante, para um movimento coerente de um pequeno conjunto deste -- pode ser modificado pelos números em questão se forças adicionais que dependam de detalhes do movimento do elétron forem introduzidas. Estas forças podem, por exemplo, vir de correntes imaginárias na parede da câmara de vácuo, ou de correntes induzidas pelo elétron nas cavidades de RF, ou de forças de sistemas auxiliares de eletrodos alimentados por amplificadores de detetores  que medem o deslocamento dos elétrons. Em anéis de armazenamento reais, o primeiro efeito levou a oscilações transversais coerentes instáveis e o último geralmente as atenua. O segundo efeito tem sido tanto a causa quanto a cura de oscilações longitudinais instáveis de um \textit{bunch}. Já que estes efeitos precisam da cooperação coerente de muitos elétrons, eles estão além do escopo desta análise e não serão considerados.
+
+Da equação \eqref{eq:4.55} também pode-se obter o resultado mais particular onde $J_x + J_\epsilon=3$. Porém, este resultado depende de uma suposição restritiva -- que a órbita ideal esteja no plano e que os campos magnéticos são simétricos com relação a este plano. Já foi discutida brevemente (no fim da \autoref{sec:3.1}) uma das consequências de desconsiderar esta suposição. Órbitas fechadas podem ter deslocamentos "verticais" $z_\epsilon$, da mesma forma que possuem deslocamentos "radiais" $x_\epsilon$. Isto complicaria os cálculos feitos aqui. Em particular, os números de partição não seriam dados pela equação \eqref{eq:4.52}. Porém, o teorema de "conservação" da equação \eqref{eq:4.55} iria continuar válido.
+
+Dois outros pontos sobre a consequência deste teorema também são importantes. Primeiro, para campos guia com "gradientes alternados" -- tipo que é universal em síncrotrons e na maioria dos síncrotrons de prótons -- o número $\mathscr{D}$ é maior que 1. Como consequência, as oscilações betatron radiais são anti-amortecidas -- e crescem exponencialmente com o tempo em uma energia fixa. Este efeito não é muito grave em síncrotrons pois o aumento de amplitude causado pelo anti-amortecimento é pequeno em um tempo de aceleração. No entanto causo, em especial, problemas durante o comissionamento do síncrotron CEA. Foi necessário instalar ímãs especiais projetados para alterar $\mathscr{D}$ sem afetar significantemente as outras características do anel.
+
+Finalmente, vale ressaltar que nenhum campo real irá satisfazer de forma exata a simetria imposta dos campos com relação ao plano da órbita ideal. As assimetrias acidentais geralmente são pequenas, mas elas irão, em geral, causar pequenos acoplamentos entre as oscilações betatron horizontal e radial. Quando este acoplamento é considerado, $x$ e $z$ não são mais as coordenadas dos modos normais. E os novos modos normais irão ter coeficientes de amortecimento que são de alguma forma diferentes de $\alpha_x$ e $\alpha_z$.
