@@ -15,7 +15,7 @@ Esta equação descreve a variação de $\tau$ para qualquer amplitude.
 \begin{align}
 	m\frac{d^2x}{dt^2} = F(x) - \mu\frac{dx}{dt}\label{eq:3.50}
 \end{align}
-Esta equação representa o movimento unidimensional em $x$ de uma partícula com massa $m$, a qual se move em um campo de força conservativo $F(x)$ e sofre uma força de fricção proporcional à sua velocidade. Sendo assim, pode-se entender a equação \eqref{eq:3.49} por meio de uma comparação direta com a equação \eqref{eq:3.50}. O movimento em $\tau$ é exatamente igual ao movimento de uma partícula com massa unitária em um campo de força conservativo
+Esta equação representa o movimento unidimensional em $x$ de uma partícula com massa $m$, a qual se move em um campo conservativo de força $F(x)$ e sofre uma força de fricção proporcional à sua velocidade. Sendo assim, pode-se entender a equação \eqref{eq:3.49} por meio de uma comparação direta com a equação \eqref{eq:3.50}. O movimento em $\tau$ é exatamente igual ao movimento de uma partícula com massa unitária em um campo conservativo de força
 \begin{align}
 	F(\tau) = -\frac{\alpha}{E_0 T_0}[eV(\tau) - U_0]\label{eq:3.51}
 \end{align}
@@ -27,7 +27,7 @@ Geralmente, o movimento em $\tau$ pode ser avaliado apenas por computação num�
 \end{align}
 onde $F(\tau)$ é dada pela equação \eqref{eq:3.51}. Este tipo de equação é geralmente resolvido definindo uma função de "energia potencial", a qual é o negativo da integral da força. Assim, define-se
 \begin{align}
-	\Phi(\tau) = \frac{\alpha}{E_0 T_0} \int\limits_{\tau}^{0}[eV(\bar{\tau}) - U_0]d\bar{\tau}
+	\Phi(\tau) = \frac{\alpha}{E_0 T_0} \int\limits_{0}^{\tau}[eV(\bar{\tau}) - U_0]d\bar{\tau}
 \end{align}
 Agora o movimento pode ser analisado utilizando o princípio de conservação de energia. Em cada instante, a soma da "energia potencial" $\Phi(\tau)$ e da "energia cinética" -- dada por $\frac{1}{2}(d\tau/dt)^2$ -- deve ser constante, dada pela "energia total". A energia total também é o máximo $\Phi_0$ que pode ser alcançado por $\Phi(\tau)$ -- o qual irá ocorrer quando $d\tau/dt$ for zero. Logo, pode-se escrever que
 \begin{align}
@@ -39,7 +39,7 @@ Suponha que a função do ganho de energia $eV(\tau)$ tenha a forma representada
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=0.9\linewidth]{./Figuras/fig36.jpeg}
-	\caption{(a) Função de aceleração de RF $eV(\tau)$, e (b) a função da energia potencial efetiva $\Phi(\tau)$.}
+	\caption{(a) Função de aceleração de RF $eV(\tau)$, e (b) a função da energia potencial efetiva $\Phi(\tau)$. Retirado de \cite{sands1970physics}.}
 	\label{fig:fig36}
 \end{figure}
 
@@ -62,7 +62,7 @@ Esta relação pode ser facilmente vista em um diagrama de fase -- $\epsilon$ ve
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=0.7\linewidth]{./Figuras/fig37.jpeg}
-	\caption{Diagrama de fase para grandes oscilações. Oscilações de energia limitadas ocorrem apenas dentro da separatriz.}
+	\caption{Diagrama de fase para grandes oscilações. Oscilações de energia limitadas ocorrem apenas dentro da separatriz. Retirado de \cite{sands1970physics}.}
 	\label{fig:fig37}
 \end{figure}
 
@@ -70,14 +70,14 @@ Também pode-se ver o que acontece considerando o termo de fricção -- o amorte
 
 Deve ser aparente que haverá uma amplitude máxima para as oscilações estáveis (periódicas) de $\tau$. Ela ocorre quando o elétron atinge o pico da montanha em $\tau_3$ -- correspondente ao ponto C da \autoref{fig:fig36}(b) -- onde $\Phi(\tau)$ é $\Phi_{max}$. Um elétron com qualquer amplitude maior irá passar o pico da montanha e adentrar o vale seguinte, onde ele terá tanta "energia cinética" que continuará neste movimento para sempre -- até que ele se perca no anel de armazenamento.
 
-As oscilações estáveis máximas variam entre os pontos C e D. Note que o ponto C também é o ponto onde $eV(\tau)$ é igual a $U_0$ novamente (à esquerda de C o elétron real sempre ganha energia e pode ainda ter esperança de retornar ao seu $\tau$ original). O outro extremo da oscilação no ponto D não tem nenhuma característica especial exceto que $\Phi(\tau)$ é igual a $\Phi_{max}$ novamente, o valor em C. O diagrama de fase para grandes oscilações é um pouco peculiar, já que tanto a velocidade quanto a aceleração vão para zero em C mas não em D. O elétron "permanece" em C -- no caso ideal para um tempo infinito! Como resultado, o diagrama de fase tem uma "quina", a qual é mostrada na curva b da \autoref{fig:fig37}. Esta curva especial é chamada de \uline{separatriz} porque ela separa as oscilações estáveis das instáveis. Um elétron injetado num anel de armazenamento com um certo desvio de energia $\epsilon$ e deslocamento no tempo $\tau$ correspondentes ao ponto P na \autoref{fig:fig37} irá circular em uma trajetória fechada mais ou menos elíptica (desconsiderando o amortecimento). Se um elétron é injetado fora da separatriz, ele será "perdido".
+As oscilações estáveis máximas variam entre os pontos C e D. Note que o ponto C também é o ponto onde $eV(\tau)$ é igual a $U_0$ novamente (à esquerda de C o elétron real sempre ganha energia e pode ainda ter esperança de retornar ao seu $\tau$ original). O outro extremo da oscilação no ponto D não tem nenhuma característica especial exceto que $\Phi(\tau)$ é igual a $\Phi_{max}$ novamente, o valor em C. O diagrama de fase para grandes oscilações é um pouco peculiar, já que tanto a velocidade quanto a aceleração vão para zero em C mas não em D. O elétron "permanece" em C -- no caso ideal para um tempo infinito! Como resultado, o diagrama de fase tem uma "quina", a qual é mostrada na curva b da \autoref{fig:fig37}. Esta curva especial é chamada de \uline{separatriz} porque ela separa as oscilações estáveis das instáveis. Um elétron injetado num anel de armazenamento com um certo desvio de energia $\epsilon$ e deslocamento no tempo $\tau$ correspondentes ao ponto P na \autoref{fig:fig37} irá circular em uma trajetória fechada mais ou menos elíptica (desconsiderando o amortecimento). Se um elétron é injetado fora da separatriz, ele será "perdido" pois, pela equação $x_\epsilon = \eta \epsilon/E_0$, seu deslocamento radial irá aumentar com o aumento do desvio de energia, de forma que chegará o ponto em que este baterá na câmara de vácuo.
 
 Agora, pode-se analisar como o sistema de RF pode determinar a abertura dinâmica do anel de armazenamento. Desvios de energia maiores que $\pm \epsilon_{max}$ -- na \autoref{fig:fig37} -- não podem ser armazenados no anel. Elétrons podem ser perdidos em desvios de energia menores se seus deslocamentos laterais $x_\epsilon$ associados a $\epsilon$ fizerem com que o elétron colida com alguma barreira física que limita a abertura radial. Normalmente, no entanto, a limitação da RF que determina a abertura dinâmica $\pm \epsilon_{pico}$. Da equação \eqref{eq:3.56}
 \begin{align}
 	\frac{\epsilon_{max}}{E_0} = \frac{1}{\alpha}[2\Phi_{max}]^{1/2}
 \end{align}
 
-Se você analisar $\Phi(\tau)$ no caso especial que a tens]ao de RF é senoidal -- ou seja, descrita pela \eqref{eq:3.36} -- obtém-se que
+Se você analisar $\Phi(\tau)$ no caso especial que a tensão de RF é senoidal -- ou seja, descrita pela \eqref{eq:3.36} -- obtém-se que
 \begin{align}
 	\Phi_{max} = \frac{\alpha U_0}{2\pi k E_0} F(q)
 \end{align}
@@ -85,7 +85,7 @@ onde
 \begin{align}
 	q = e\widehat{V}/U_0
 \end{align}
-é a sobretensão -- a taxa da tensão de pico de RF para a tensão mínima necessária para armazenar um elétron síncrono -- e
+é a sobretensão -- a razão entre a tensão de pico de RF e a tensão mínima necessária para armazenar um elétron síncrono -- e
 \begin{align}
 	F(q) = 2\left[\sqrt{q^2 - 1} - cos^{-1}(1/q)\right]
 \end{align}
@@ -102,15 +102,15 @@ A função da abertura dinâmica $F(q)$ é representada na \autoref{fig:fig38}. 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=0.5\linewidth]{./Figuras/fig38.jpeg}
-	\caption{Função da abertura dinâmica $F(q)$.}
+	\caption{Função da abertura dinâmica $F(q)$. Retirado de \cite{sands1970physics}.}
 	\label{fig:fig38}
 \end{figure}
 
-Finalmente, pensando no que acontece se um elétron inicia fora da abertura dinâmica --  diga-se em pontos acima do ponto D na curva de $\Phi(\tau)$ na \autoref{fig:fig36}(b) -- e descobrindo qual seria sua trajetória de fase, o resultado seriam as curvas da \autoref{fig:fig39}. três separatrizes sucessivas são mostradas e diversos exemplos de trajetórias instáveis. Novamente, observa-se que um elétron que começa sua trajetória fora de uma região estável irá -- exceto por um fortuno acidente -- ficar fora para sempre.
+Finalmente, pensando no que acontece se um elétron inicia fora da abertura dinâmica --  diga-se em pontos acima do ponto D na curva de $\Phi(\tau)$ na \autoref{fig:fig36}(b) -- e descobrindo qual seria sua trajetória de fase, o resultado seriam as curvas da \autoref{fig:fig39}. Três separatrizes sucessivas são mostradas e diversos exemplos de trajetórias instáveis. Novamente, observa-se que um elétron que começa sua trajetória fora de uma região estável irá -- exceto por um fortuno acidente -- ficar fora para sempre.
 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=0.7\linewidth]{./Figuras/fig39.jpeg}
-	\caption{Trajetórias de fase para elétrons não capturados em um \textit{bunch} (um desenho qualitativo).}
+	\caption{Trajetórias de fase para elétrons não capturados em um \textit{bunch} (um desenho qualitativo). Retirado de \cite{sands1970physics}.}
 	\label{fig:fig39}
 \end{figure}
