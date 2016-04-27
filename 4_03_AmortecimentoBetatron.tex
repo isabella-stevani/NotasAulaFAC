@@ -9,7 +9,7 @@ onde $\varphi = s/\beta$. A amplitude de oscilação $A$ pode ser obtida por $z$
 \begin{align}
 	A^2 = z^2 + (\beta z')^2
 \end{align}
-Suponha um elétron com energia nominal $E_0$ -- o qual está oscilando verticalmente sobre a órbita ideal. Em qualquer elemento azimutal $\delta s$ o elétron irá perder por radiação uma pequena quantidade de energia $\delta E$. Seu vetor de momento $p$ será mudado por $\delta p$ e, como foi apontado anteriormente, $\delta p$ é paralelo (e oposto) a $p$, então $|\delta p| = \delta E/c$. Veja a \autoref{fig:fig40}(a). A perda por radiação não muda nem o desvio nem a inclinação da trajetória (as variações de $z$ e de $s$ com relação ao tempo existem, mas compensam uma a outra); então a amplitude $A$ não é alterada pela radiação. Existe um pequeno efeito causado pelas forças focalizadoras efetivas e, portanto, $\beta$ também varia com uma mudança na energia. este efeito é chamado de amortecimento adiabático, porém é um efeito de segunda ordem e pode ser ignorado nesta análise já que a energia não varia na média quando a aceleração de RF é considerada.
+Suponha um elétron com energia nominal $E_0$ -- o qual está oscilando verticalmente sobre a órbita ideal. Em qualquer elemento azimutal $\delta s$ o elétron irá perder por radiação uma pequena quantidade de energia $\delta E$. Seu vetor de momento $p$ será mudado por $\delta p$ e, como foi apontado anteriormente, $\delta p$ é paralelo (e oposto) a $p$, então $|\delta p| = \delta E/c$. Veja a \autoref{fig:fig40}(a). A perda por radiação não muda nem o desvio nem a inclinação da trajetória (as variações de $z$ e de $s$ com relação ao tempo existem, mas compensam uma a outra); então a amplitude $A$ não é alterada pela radiação. Existe um pequeno efeito causado pelas forças focalizadoras efetivas e, portanto, $\beta$ também varia com uma mudança na energia. Este efeito é chamado de amortecimento adiabático, porém é um efeito de segunda ordem e pode ser ignorado nesta análise já que a energia não varia na média quando a aceleração de RF é considerada.
 
 \begin{figure}[!htb]
 	\centering
@@ -85,7 +85,7 @@ Quando a energia de um elétron muda por uma quantidade $\delta E$, existe uma m
 \end{align}
 Mas, como a posição do elétron no espaço não muda por um impulso momentâneo finito, o deslocamento total $x$ não muda, então obrigatoriamente existe uma compensação em $x_\beta$. Isto é, da equação \eqref{eq:4.33},
 \begin{align*}
-	\delta x = \delta x_\epsilon + \delta x-\beta = 0
+	\delta x = \delta x_\epsilon + \delta x_\beta = 0
 \end{align*}
 de forma que
 \begin{align}
@@ -107,7 +107,7 @@ Algo similar ocorre na inclinação betatron. Correspondendo à equação \eqref
 
 Agora, porém, um impulso elementar pode mudar a inclinação total $x'$ por algum $\delta x'$, então deve-se ter
 \begin{align}
-	\delta x'_\beta = \delta x' - \delta x'-\epsilon
+	\delta x'_\beta = \delta x' - \delta x'_\epsilon
 \end{align}
 Tomando a derivada de $x_\epsilon$ da equação \eqref{eq:2.28},
 \begin{align}
@@ -135,7 +135,7 @@ Novamente, toma-se o desvio de energia $\delta E$ como a perda por radiação em
 	\delta E = -\frac{P_\gamma}{c}\Delta \ell
 \end{align}
 
-Tomando $\Delta \ell$ a expressão em \eqref{eq:2.15},
+Tomando $\Delta \ell$ da expressão em \eqref{eq:2.15},
 \begin{align}
 	\delta E = -\left(1+\frac{x_\beta}{\rho_s}\right)\frac{P_\gamma}{c}\Delta s
 \end{align}
@@ -144,7 +144,7 @@ Combinando este resultado com a equação \eqref{eq:4.41}, tem-se que a mudança
 \begin{align}
 	A \delta A = x_\beta \eta \left(1+\frac{x_\beta}{\rho_s}\right)\frac{P_\gamma}{cE_0}\Delta s
 \end{align}
-Novamente, apenas o valor esperado de $\delta A$ é importante -- a média sobre todos os ângulos de fase $\varphi$. O valor esperado de $x_\beta$ é zero e de $x_\beta$ é $A^2/2$; então tem-se que
+Novamente, apenas o valor esperado de $\delta A$ é importante -- a média sobre todos os ângulos de fase $\varphi$. O valor esperado de $x_\beta$ é zero e de $x_\beta^2$ é $A^2/2$; então tem-se que
 \begin{align}
 	\frac{\mean{\delta A}}{A} = \frac{\eta}{2 \rho_s}\frac{P_\gamma}{cE_0}\Delta s
 \end{align}
@@ -155,7 +155,7 @@ Como foi assumido um campo guia isomagnético, em qualquer lugar que $P_\gamma$ 
 \end{align}
 Observe que o sinal do lado direito da equação é positivo. Ou seja, há um aumento da amplitude devido à radiação!
 
-Felizmente, esta é apenas uma parte da análise. Também é preciso considerar o efeito da aceleração de RF. Porém, para isso existe um efeito de "tamanho de caminho" correspondente. Geralmente, as cavidades de RF são localizadas onde $\rho = \inf$, ou seja, em trechos retos. Mas, de qualquer forma, é um propriedade destas cavidades que o ganho de energia seja (até primeira ordem, ao menos) independente do deslocamento betatron. O cálculo da contribuição da aceleração de RF ocorre da mesma forma que no movimento vertical, com o resultado da equação \eqref{eq:4.30}. Para obter o efeito total em uma revolução é preciso computar as contribuições da perda por radiação e da aceleração para obter
+Felizmente, esta é apenas uma parte da análise. Também é preciso considerar o efeito da aceleração de RF. Porém, existe um efeito de "tamanho de caminho" correspondente. Geralmente, as cavidades de RF são localizadas onde $\rho = \infty$, ou seja, em trechos retos. Mas, de qualquer forma, é uma propriedade destas cavidades que o ganho de energia seja (até primeira ordem, ao menos) independente do deslocamento betatron. O cálculo da contribuição da aceleração de RF ocorre da mesma forma que no movimento vertical, com o resultado da equação \eqref{eq:4.30}. Para obter o efeito total em uma revolução é preciso computar as contribuições da perda por radiação e da aceleração para obter
 \begin{align}
 	\frac{\Delta A}{A} = -\left(1-\frac{\eta}{\rho_0}\right)\frac{U_0}{2E_0}
 \end{align}
