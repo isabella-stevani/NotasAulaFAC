@@ -1,5 +1,5 @@
 \subsection{Flutuações de energia}
-Hora de examinar os efeitos da emissão quântica sobre as oscilações de energia de um elétron armazenado. Quando uma quantidade de energia é emitida, a energia do elétron subitamente decresce de uma quantidade $u$. Este distúrbio impulsivo causa uma pequena oscilação de energia. O efeito cumulativo de várias distorções -- ocorrendo em tempos aleatórios -- faz com que a oscilação de energia cresça (como em um caminho aleatório). O crescimento é limitado -- na média -- pelo amortecimento; e, em condições estacionárias, as oscilações de energia de um elétron em particular iram flutuar em torno de uma amplitude média. Estas flutuações de energia serão analisadas agora.
+Hora de examinar os efeitos da emissão quântica sobre as oscilações de energia de um elétron armazenado. Quando uma quantidade de energia é emitida, a energia do elétron subitamente decresce de uma quantidade $u$. Este distúrbio impulsivo causa uma pequena oscilação de energia. O efeito cumulativo de várias distorções -- ocorrendo em tempos aleatórios -- faz com que a oscilação de energia cresça (como em um caminho aleatório). O crescimento é limitado -- na média -- pelo amortecimento; e, em condições estacionárias, as oscilações de energia de um elétron em particular irão flutuar em torno de uma amplitude média. Estas flutuações de energia serão analisadas agora.
 
 Em um primeiro momento, apenas será considerada a medida típica da oscilação de energia -- ou seja, a raiz quadrada média do desvio da energia média -- sem considerar detalhadamente a distribuição de probabilidade do desvio de energia. A natureza desta distribuição será considerada depois.
 
@@ -55,13 +55,13 @@ e $t_1$ é algum deslocamento de tempo que não importa agora.
 	c.q.d.
 \end{proof}
 
-A emissão quântica altera a amplitude da oscilação para um novo valor que depende da amplitude inicial e de $(t_i-t_0)$. Já que o tempo $t_i$ onde uma emissão quântica ocorre é totalmente imprevisível -- e apenas o efeito cumulativo destes eventos interessa -- apenas questões estatísticas são relevantes. Por exemplo: qual a mudança de amplitude provável? Em geral, a fase $(t_i-t_0)$ é completamente aleatória e o valor esperado de $cos(\Omega(t_i-t_0))$ é, portanto, zero. Então a mudança de amplitude provável devido à radiação quântica é
+A emissão quântica altera a amplitude da oscilação para um novo valor que depende da amplitude inicial e de $(t_i-t_0)$. Já que o tempo $t_i$ onde uma emissão quântica ocorre é totalmente imprevisível -- e apenas o efeito cumulativo destes eventos interessa -- apenas questões estatísticas são relevantes. Por exemplo: qual a provável mudança de amplitude? Em geral, a fase $(t_i-t_0)$ é completamente aleatória e o valor esperado de $cos(\Omega(t_i-t_0))$ é, portanto, zero. Então a mudança de amplitude provável devido à radiação quântica é
 \begin{align}
 	\mean{\delta A^2} = \mean{A_1^2 - A_0^2} = u^2
 \end{align}
 Note que este resultado diz que a mudança provável em $A^2$, a qual ocorre quando é adicionado um novo incremento de oscilação de amplitude $u$ com fase aleatória, é apenas $u^2$ -- o mesmo resultado que seria obtido para $\delta A^2$ se a análise tivesse começado com $A=0$.
 
-Suponha agora que estes eventos quânticos ocorrem em uma sequência de tempo aleatória com uma taxa média $\mathscr{N}$ (número por unidade de tempo). Cada evento muda $A^2$ por uma quantidade $u^2$; e, já como o tempo médio entre cada evento é $1/\mathscr{N}$, espera-se que
+Suponha agora que estes eventos quânticos ocorrem em uma sequência de tempo aleatória com uma taxa média $\mathscr{N}$ (número por unidade de tempo). Cada evento muda $A^2$ por uma quantidade $u^2$; e, já que o tempo médio entre cada evento é $1/\mathscr{N}$, espera-se que
 \begin{align}
 	\mean{\frac{dA^2}{dt}} = \mathscr{N}u^2
 \end{align}
@@ -90,11 +90,11 @@ Um resultado equivalente aproximado pode ser obtido a partir de um simples argum
 \end{align}
 Este resultado é parecido com o que foi obtido na equação \eqref{eq:5.30}. Note que, como $\mathscr{N} \approx P_\gamma/u_c$ e $\tau_\epsilon \approx E_0/P_\gamma$, também pode-se escrever
 \begin{align}
-	\sigma_\epsilon \approx \sqrt{E_0 u_c}
+	\sigma_\epsilon \approx \sqrt{E_0 u_c}\label{eq:5.32}
 \end{align}
 Concluindo: a flutuação de energia é aproximadamente a média geométrica entre a energia do elétron e a energia crítica do fóton!
 
-Pode-se, então, fazer um cálculo mais preciso -- o qual é um pouco mais complicado. Primeiro, porque existe uma distribuição estatística do tamanho das quantidades de energia. Segundo, porque tanto a distribuição quanto a taxa média podem variar ao longo do anel de armazenamento. Retornando a equação \eqref{eq:5.27}, deve-se considerar separadamente a contribuição de cada intervalo de tamanhos quânticos a $d\mean{A^2}/dt$. Estas quantidades com energias entre $u$ e $u+\Delta u$ -- onde existem $n(u)\Delta u$ quantidades de energia emitidas por unidade de tempo -- irão contribuir com
+Pode-se, então, fazer um cálculo mais preciso -- o qual é um pouco mais complicado. Primeiro, porque existe uma distribuição estatística do tamanho das quantidades de energia. Segundo, porque tanto a distribuição quanto a taxa média podem variar ao longo do anel. Retornando à equação \eqref{eq:5.27}, deve-se considerar separadamente a contribuição de cada intervalo de tamanhos quânticos a $d\mean{A^2}/dt$. Estas quantidades com energias entre $u$ e $u+\Delta u$ -- onde existem $n(u)\Delta u$ quantidades de energia emitidas por unidade de tempo -- irão contribuir com
 \begin{align}
 	\Delta \left\{\frac{d\mean{A^2}}{dt}\right\} = u^2 n(u) \Delta u
 \end{align}
@@ -126,7 +126,7 @@ o que pode ser reescrito -- utilizando a equação \eqref{eq:4.9} -- como
 \end{align}
 E $u_c$ na órbita ideal pode ser obtida pela equação \eqref{eq:5.9}:
 \begin{align}
-	\left(u_c\right)_{\acute{o}rbita\ ideal} = \frac{3}{2}\hslash c \gamma_0^3 |G|
+	\left(u_c\right)_{\acute{o}rbita\ ideal} = \frac{3}{2}\hslash c \gamma_0^3 |G|\label{eq:5.40}
 \end{align}
 Logo, tem-se que
 \begin{align}
@@ -155,7 +155,7 @@ com $C_q$ -- a qual é chamada de constante quântica -- dada por
 \end{align}
 É muito próxima do comprimento de onda Compton do elétron.
 
-O termo $|G^3|/J_\epsilon \mean{G^2}$ é uma propriedade geométrico do campo guia. Mais especificamente,
+O termo $|G^3|/J_\epsilon \mean{G^2}$ é uma propriedade geométrica do campo guia. Mais especificamente,
 \begin{align}
 	\frac{\mean{|G^3|}}{J_\epsilon\mean{G^2}} = \frac{1}{J_\epsilon}\frac{\oint |G^3(s)|ds}{\oint G^2(s)ds}
 \end{align}
