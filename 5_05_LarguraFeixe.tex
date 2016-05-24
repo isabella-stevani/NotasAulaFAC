@@ -1,0 +1,156 @@
+\subsection{Largura do feixe}
+A emissão quântica discreta durante a radiação síncrotron também irá excitar as oscilações betatron, e estas oscilações quanticamente induzidas são responsáveis pela extensão lateral do feixe de elétrons armazenado. Primeiramente, deve-se analisar os efeitos quânticos nas oscilações betatron horizontais. Da mesma forma que na \autoref{sec:5.3}, em um primeiro momento apenas as propriedades estatísticas mais gerais das flutuações serão analisadas.
+
+Na \autoref{sec:4.3}, foi analisado o efeito de uma pequena perda de energia $\delta E$ -- onde foi assumido que esta perda ocorre em um comprimento de caminho contínuo $\delta \ell$ -- sob a suposição de que a perda de momento era paralela à direção do movimento. Os resultados desta análise podem ser utilizados aqui fazendo apenas uma adaptação: igualando $\delta E$ à energia quântica $u$ -- mantendo por hora a suposição de que a emissão quântica muda apenas a magnitude do momento, não sua direção. Da \autoref{sec:4.3}. sabe-se que uma variação na energia é acompanhada por uma variação no deslocamento betatron apenas porque ocorre um deslocamento repentino com relação à trajetória de referência -- a órbita fechada -- em torno da qual as oscilações ocorrem. Tomando os resultados das equações \eqref{eq:4.35} e \eqref{eq:4.38}, a emissão quântica de energia $u$ irá resultar numa mudança $\delta x_\beta$ no deslocamento betatron e numa mudança $\delta x'_\beta$ na inclinação betatron dadas por
+\begin{align}
+	\delta x_\beta = -\eta \frac{u}{E_0}\ \ \ \ \ \ \ \delta x'_\beta = -\eta' \frac{u}{E_0}\label{eq:5.67}
+\end{align}
+
+O efeito que este distúrbio repentino terá sobre as oscilações betatron irá depender de em qual parte do anel de armazenamento a emissão quântica ocorrerá -- e onde as oscilações estão sendo observadas. Foi visto na \autoref{sec:2.6} como relacionar as oscilações observadas em uma coordenada azimutal com outras encontradas em coordenadas diferentes; então, por conveniência, pode-se analisar os efeitos quânticos pelo efeitos deles sobre as oscilações em uma coordenada azimutal fixa -- diga-se $s_1$ -- e depois transferir o resultados para qualquer outro ponto. O raciocínio, então, pode ser o seguinte: (1) Analisar os efeitos em $s_1$ de uma emissão quântica ocorrida em outro ponto $s_2$. (2) Considerar a média em todos as energias que podem ser emitidas em $s_2$. (3) Somar as contribuições de todos os possíveis valores de $s_2$. 
+
+Na \autoref{sec:2.6} foi considerado o movimento resultante em $s_1$ a partir das "condições iniciais" $x_2$ e $x'_2$ em $s_2$, e o resultado pode ser escrito na forma\footnote{Fica claro que $\beta$ significa, neste caso, $\beta_x$.}
+\begin{align}
+	x_\beta(s_1, t_j) = a\sqrt{\beta_1}cos(\varphi_j)\label{eq:5.68}
+\end{align}
+onde $\varphi_j$ são as fases de oscilação nos tempos $t_j$ de sucessivas passagens  do elétron pelo ponto $s_1$, $\beta_1$ a função betatron no ponto $s_1$ e $a$ um fator de amplitude invariante dado por
+\begin{align}
+	a^2 = \frac{1}{\beta_2}\left[x_2^2 + \left(\beta_2 x'_2 - \frac{1}{2}\beta'_2 x_2\right)^2\right]
+\end{align}
+Colocando $x_2$ e $x'_2$ como o distúrbio da equação \eqref{eq:5.67} e escrevendo para $\delta a^2$ a amplitude resultante, tem-se que a emissão quântica de energia $u$ em $s_2$ resultará numa amplitude
+\begin{align}
+	\delta a^2 = \frac{u^2}{E_0^2}\frac{1}{\beta_2}\left[\eta_2^2 + \left(\beta_2 \eta'_2 - \frac{1}{2}\beta'_2 \eta_2\right)^2\right]\label{eq:5.70}
+\end{align}
+Todas as quantidades que depende de $s$ no lado direito da equação serão avaliadas em $s_2$, então define-se uma nova função dependente de $s$:
+\begin{align}
+	\mathscr{H}(s) = \frac{1}{\beta}\left[\eta^2 + \left(\beta \eta' - \frac{1}{2}\beta' \eta\right)^2\right]\label{eq:5.71}
+\end{align}
+a qual é especificada pelas propriedades do campo guia. Então a equação \eqref{eq:5.70} se torna apenas
+\begin{align}
+	\delta a^2 = \frac{u^2}{E_0^2}\mathscr{H}(s_2)
+\end{align}
+
+Este resultado representa a amplitude final quando a amplitude inicial é zero. O que aconteceria se a amplitude inicial $a$ fosse diferente de zero e uma emissão quântica ocorresse? Como foi visto no início da \autoref{sec:4.3} para uma amplitude $A$, enquanto não houver nenhuma relação entre a fase da oscilação inicial e a ocorrência do evento quântico -- isto é, que a emissão quântica for totalmente aleatória -- então a mudança provável no valor de $a^2$ é apenas o $\delta a^2$ que foi calculado. Portanto, pode-se dizer que a mudança provável na amplitude invariante provável da oscilação beatron causada pela emissão quântica de energia $u$ em $s_2$ será
+\begin{align}
+	\delta \mean{a^2} = \frac{u^2}{E_0^2}\mathscr{H}(s_2)\label{eq:5.73}
+\end{align}
+
+Agora já é conhecido o que vai acontecer se uma emissão quântica ocorrer em $s_2$; o próximo questionamento é sobre qual a probabilidade deste evento ocorrer. Considere o que acontece quando um elétron viaja por um distância $\Delta s$ em $s_2$ -- o que demorará $\Delta t = \Delta s/c$. Tomando as definições da \autoref{sec:5.1}, a probabilidade de ocorrer uma emissão quântica é $\mathscr{N} \Delta s/c$, o valor provável de $u^2$ para a emissão ocorrida é $\mean{u^2}$. Então uma mudança no valor provável de $a^2$ no elemento de trajetória $\Delta s$ pode ser escrito como
+\begin{align}
+	\delta \mean{a^2} = \frac{\left\{\mathscr{N} \Delta s \mean{u^2}\mathscr{H}(s)\right\}_2}{c E_0^2}\label{eq:5.74}
+\end{align}
+O subscrito acima significa que todas as quantidades dentro das chaves deverão ser avaliadas em $s_2$ (tanto $\mathscr{N}$ quanto $\mean{u^2}$ dependem do raio local de curvatura da trajetória).
+
+Suponha que todas as contribuições para mudanças em $\mean{a^2}$ durante uma volta do elétron ao redor do anel sejam computadas. A mudança resultante, a qual será chamada de $\Delta \mean{a^2}$, é obtida integrando o lado direito da equação \eqref{eq:5.74} ao redor do anel:
+\begin{align}
+	\Delta \mean{a^2} = \frac{1}{c E_0^2} \oint \left\{\mathscr{N} \mean{u^2} \mathscr{H}\right\}_2 ds_2
+\end{align}
+Como antes\footnote{A mesma linha de raciocínio da \autoref{sec:5.3} será utilizada, então os detalhes desta dedução não serão discutidos novamente.}, será conveniente representar a integral como o produto entre o comprimento da órbita $2\pi R$ e o valor médio -- com respeito a $s$ -- do integrando:
+\begin{align}
+	\Delta \mean{a^2} = \frac{2 \pi R}{c E_0^2}\mean{\mathscr{N} \mean{u^2} \mathscr{H}}_s\label{eq:5.76}
+\end{align}
+Apesar de $\mathscr{N}$ e $\mean{u^2}$ dependerem da trajetória real do elétron -- a qual pode mudar de uma volta para outra -- eles quase não serão diferentes dos seus valores na órbita ideal. Além disso, as diferenças irão, até uma análise de primeira ordem dos deslocamentos com relação à órbita ideal, ser zero na média. Como apenas o efeito cumulativo de várias revoluções é relevante, nenhum erro significante será feito ao analisar a média na equação \eqref{eq:5.76} avaliando $\mathscr{N}\mean{u^2}$ na órbita ideal. Desta forma, a média ao longo de $s$ deve ser interpretada desta maneira.
+
+A variação $\Delta \mean{a^2}$ da equação \eqref{eq:5.76} ocorre no tempo de uma revolução, ou seja, em $2 \pi R/c$. Logo, pode-se escrever que
+\begin{align}
+	\frac{d\mean{a^2}}{dt} = Q_x = \frac{\mean{\mathscr{N}\mean{u^2}\mathscr{H}}_s}{E_0^2}\label{eq:5.77}
+\end{align}
+Isto é, claro, apenas a contribuição do distúrbio quântico. Como na \autoref{sec:5.2}, ainda é preciso adicionar o efeito médio da radiação o qual contribui com o termo de amortecimento
+\begin{align}
+	\frac{d\mean{a^2}}{dt} = - \frac{2\mean{a^2}}{\tau_x}\label{eq:5.78}
+\end{align}
+onde $\tau_x$ é a constante de tempo de amortecimento das oscilações betatron radiais. Em condições estacionárias, a derivada total com relação ao tempo -- a soma da equações \eqref{eq:5.77} e \eqref{eq:5.78} -- é zero. Então, o valor estacionário esperado de $a^2$ é
+\begin{align}
+	\mean{a^2} = \frac{1}{2}\tau_x Q_x
+\end{align}
+
+Retornando à equação \eqref{eq:5.68}, deseja-se analisar o valor esperado do \textit{spread} nos deslocamentos betatron. Elevando ao quadrado e tomando o valor esperado de $x_\beta(s_1)$, pode-se escrever que o \textit{spread} RMS no deslocamento betatron radial em $s_1$ é dado por
+\begin{align}
+	\sigma_{x\beta}^2(s_1) = \mean{x_\beta^2(s_1)} = \frac{1}{2} \mean{a^2}\beta_1
+\end{align}
+Como a azimutal $s_1$ pode estar em qualquer ponto do anel, pode-se abandonar seu subscrito. Combinando as duas últimas equações, tem-se que
+\begin{align}
+	\sigma_{x\beta}^2(s) = \frac{1}{4}\tau_x Q_x \beta(s)\label{eq:5.81}
+\end{align}
+A forma deste resultado é similar ao que foi obtido para $\sigma_\epsilon$. Tanto $\tau_x$ quanto $Q_x$ são números os quais são determinados a partir de propriedades gerais do campo guia -- portanto, não variam com $s$. A única variação de $\sigma_{x\beta}$ vem do fator $\beta(s)$. Então este é o resultado obtido para o \textit{spread} horizontal do feixe de elétrons armazenado devido às oscilações betatron induzidas pela emissão quântica.
+
+Para entender o significado físico deste resultado, é preciso analisar as complexidades escondidas em $\tau_x$ e $Q_x$. Tomando $\mathscr{N}\mean{u^2}$ da equação \eqref{eq:5.41},
+\begin{align}
+	Q_x = \frac{3}{2} C_u \hslash c \gamma_0^3 \frac{\mean{P_\gamma}_s \mean{|G^3| \mathscr{H}}_s}{\mean{G^2}}
+\end{align}
+onde $G(s)$ é o inverso do raio de curvatura da órbita, e $\mathscr{H}(s)$ é a função da equação \eqref{eq:5.71}. Tomando $\tau_x$ da equação \eqref{eq:4.53}, tem-se que
+\begin{align}
+	\frac{\sigma_{x\beta}^2}{\beta} = \frac{1}{4}\tau_x Q_x = \frac{C_q \gamma_0^2\mean{|G^3| \mathscr{H}}_s}{J_x \mean{G^2}_s}
+\end{align}
+onde $C_q$ é o coeficiente quântico definido na equação \eqref{eq:5.46}.
+
+Para um campo guia isomagnético ($G = 1/\rho_0$, ou zero) o resultado é simplificado para
+\begin{align}
+	\frac{\sigma_{x\beta}^2}{\beta} = \frac{C_q \gamma_0^2 \mean{\mathscr{H}}_{mag}}{J_x \rho_0}\ \ (isomag.)\label{eq:5.84}
+\end{align}
+onde $\mean{\mathscr{H}}_{mag}$ é a média de $\mathscr{H}$ tomada apenas nos magnetos. Isto é,
+\begin{align}
+	\mean{\mathscr{H}}_{mag} = \frac{1}{2 \pi \rho_0}\int\limits_{mag}^{} \frac{1}{\beta}\left\{\eta^2 + \left(\beta \eta' - \frac{1}{2}\beta' \eta\right)^2\right\}ds\label{eq:5.85}
+\end{align}
+
+Comparando a equação \eqref{eq:5.84} com a equação \eqref{eq:5.48}, nota-se que para um campo guia isomagnético pode-se escrever que
+\begin{align}
+	\frac{\sigma_{x\beta}^2(s)}{\beta(s)} = \frac{J_\epsilon \mean{\mathscr{H}}_{mag}}{J_x}\left(\frac{\sigma_\epsilon}{E_0}\right)^2\label{eq:5.86}
+\end{align}
+
+Para um cálculo preciso de $\sigma_{x\beta}$, a integral da equação \eqref{eq:5.85} precisa ser avaliada. No entanto, pode-se obter uma aproximação simples -- mas usualmente muito boa -- fazendo uso de relações aproximadas discutidas na \autoref{sec:3.3}. A equação \eqref{eq:3.21} dá uma boa aproximação para $\eta(s)$:
+\begin{align}
+	\eta(s) \approx \left(\frac{\alpha R}{\nu_x}\right)^{1/2}\beta_x^{1/2}(s)\label{eq:5.87}
+\end{align}
+Considerando que esta aproximação é válida e $\beta \eta'$ e $1/2 \beta1 \eta$ são constantes ao longo do anel, , $\mathscr{H}$ é apenas uma constante! Mais especificamente,
+\begin{align}
+	\mathscr{H} \approx \frac{\alpha R}{\nu_x}\label{eq:5.88}
+\end{align}
+e a equação \eqref{eq:5.86} torna-se
+\begin{align}
+	\frac{\sigma_{x\beta}(s)}{\beta(s)} \approx \frac{J_\epsilon}{J_x}\frac{\alpha R}{\nu_x}\left(\frac{\sigma_\epsilon}{E_0}\right)^2\ \ (isomag.)\label{eq:5.89}
+\end{align}
+De forma alternativa, a equação \eqref{eq:5.84} pode ser escrita como
+\begin{align}
+	\frac{\sigma_{x\beta}(s)}{\beta(s)} \approx \frac{C_q \alpha R \gamma_0^2}{J_x \rho_0 \nu_x}\ \ (isomag.)
+\end{align}
+O \textit{spread} betatron radial é proporcional à energia dos elétrons armazenados e à média geométrica de $C_q$ e a um tamanho que é característico do campo guia.
+
+Para ter uma noção qualitativa da ordem de magnitude desse efeito, pode-se substituir $\beta$ do lado direito da equação \eqref{eq:5.89} pelo seu valor típico $\beta_n = R/\nu_x$ e substituir $\alpha$ pelo seu equivalente aproximado $1/\nu_x^2$ -- veja a \autoref{sec:2.8} e a \autoref{sec:3.3} -- para obter
+\begin{align}
+	\left(\frac{\sigma_{x\beta}}{\beta_n}\right)^2 \approx \frac{J_\epsilon}{J_x \nu_x^2}\left(\frac{\sigma_\epsilon}{E_0}\right)^2
+\end{align}
+A relação entre $\sigma_{x\beta}$ e $\beta_n$ é a mesma que a relação entre $\sigma_\epsilon$ e $E_0$, exceto por um fator $J_\epsilon/J_x \nu_x^2$ que é aproximadamente $1/3$. Como já foi apontado anteriormente, $\sigma_\epsilon/E_0$ é apenas $\gamma$ vezes o comprimento de onde de Compton pelo raio de curvatura magnético. Para um típico anel de armazenamento de 1 GeV, $\beta_n \approx 6$ metros e $\sigma_\epsilon/E_0 \approx 4 \times 10^{-4}$ (como foi visto anteriormente); então $\sigma_{x\beta} \approx 1.4$ milímetros. 
+
+Como foi discutido na \autoref{sec:5.3} para os desvios de energia, a probabilidade de encontrar qualquer deslocamento betatron em particular irá variar conforme uma função de erro normal. Isto é, a probabilidade de encontrar um elétron em particular com deslocamento betatron entre $x_\beta$ e $x_\beta + dx_\beta$ será
+\begin{align}
+	w(x_\beta)dx_\beta = \frac{1}{\sqrt{2\pi} \sigma_{x\beta}}\ e^{-x_\beta^2/2\sigma_{x\beta}}dx_\beta
+\end{align}
+Considerando um \textit{bunch} em particular que contém $N$ elétrons, quando ele passar em uma azimutal particular $s$, o número de elétrons $n(x_\beta)$ que estão no intervalo radial $dx_\beta$ em $x_\beta$ é
+\begin{align}
+	n(x_\beta)dx_\beta = Nw(x_\beta)dx_\beta
+\end{align}
+e, portanto, também possui uma distribuição Gaussiana. Pode-se pensar, então, o feixe armazenado como um objeto difuso com uma largura média (a qual depende de $s$) dada pelo desvio padrão $\sigma_{x\beta}$ da sua distribuição em raio.
+
+No entanto, não deve-se esquecer que o \textit{spread} radial total tem contribuições tanto das oscilações betatron quanto das oscilações de energia, já que o \textit{spread} de energias dos elétrons em um \textit{bunch} levam a um \textit{spread} radial associado. Retomando a ideia de que um elétron com desvio de energia $\epsilon$ move-se sobre uma órbita a qual seu deslocamento radial varia com a posição azimutal $s$ de acordo com $x_\epsilon(s) = \eta(s) \epsilon/E_0$, segue que o quadrado do \textit{spread} radial devido ao \textit{spread} de energia é
+\begin{align}
+	\sigma_{x\epsilon}^2(s) = \eta^2(s)\frac{\sigma_\epsilon^2}{E_0^2}
+\end{align}
+Agora os períodos das oscilações de energia e das oscilações betatron são bem diferentes, e certamente não podem ser mensurados juntos de forma precisa. Portanto, deve-se considerar que -- apesar de ambos serem estimulados pelos mesmos eventos estocásticos -- eles são estatisticamente independentes. Desta forma, pode-se adicionar suas contribuições ao \textit{spread} radial total elevando suas quantidades ao quadrado e escrever que
+\begin{align}
+	\sigma_x^2 = \sigma_{x\beta}^2 + \sigma_{x\epsilon}^2
+\end{align}
+
+Considerando um campo guia isomagnético, pode-se tomar $\sigma_{x\beta}^2$ da equação \eqref{eq:5.86} e utilizar a equação \eqref{eq:5.48} para $\sigma_\epsilon$, então tem-se que
+\begin{align}
+	\sigma_x^2(s) = \frac{C_q \gamma_0^2}{\rho_0}\left[\frac{\mean{\mathscr{H}}_{mag} \beta(s)}{J_x} + \frac{\eta^2(s)}{J_\epsilon}\right]\ \ (isomag.)
+\end{align}
+Ou também pode-se utilizar as expressões aproximadas das equações \eqref{eq:5.87} e \eqref{eq:5.88} para $\eta$ e $\mathscr{H}$, assim os dois termos contidos entre os colchetes resultarão em apenas $J_x/J_\epsilon$ e pode-se escrever que
+\begin{align}
+	\sigma_x^2(s) \approx \sigma_{x\beta}^2\left(1 + \frac{J_x}{J_\epsilon}\right)\ \ (isomag.)
+\end{align}
+As duas contribuições para o \textit{spread} radial variam juntas, então sua soma é um fator constante. Relembrando que $J_\epsilon$ é tipicamente em torno do dobro de $J_x$, tem-se que
+\begin{align}
+	\sigma_x \approx \sqrt{1.5}\sigma_{x\beta}
+\end{align}
+
+Os resultados desta seção não levam em consideração os efeitos de acoplamento entre as oscilações radial e vertical. Se este acoplamento existir, os resultados devem ser modificados como na análise a seguir.
