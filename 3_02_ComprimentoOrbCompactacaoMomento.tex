@@ -1,0 +1,55 @@
+\subsection{Comprimento da órbita: fator de compactação de momento}\label{sec:3.2}
+Uma importante consequência do desvio de energia é a variação associada na circunferência da órbita fechada. Um elétron com energia nominal $E_0$ circulando na órbita ideal irá, em uma revolução, viajar uma distância $L$, a circunferência da órbita ideal. Em qualquer outra trajetória, a distância percorrida em uma revolução irá depender dos deslocamentos com relação à órbita ideal, e espera-se que ela seja diferente de $L$. Já foi discutido na \autoref{sec:2.3} que um elétron que se move de $s$ a $s + ds$ com um deslocamento $x$ com relação à órbita ideal tem um comprimento de caminho $d\ell$ diferente de $ds$ por uma quantidade que depende do raio local de curvatura. Veja a \autoref{fig:fig9}. Pela equação \eqref{eq:2.15}, tem-se que
+\begin{align}
+	d\ell = (1+G(s)x)ds\label{eq:3.7}
+\end{align}
+enquanto apenas os termos até primeira ordem sejam considerados.
+
+Uma oscilação betatron não irá, na média, produzir nenhuma mudança de primeira ordem no comprimento de caminho percorrido. O caminho é aumentado durante um deslocamento radial positivo ($x>0$) e diminuído em um negativo ($x<0$). Como os deslocamentos betatron são, na média, simétricos com relação a $x=0$, a mudança do comprimento de caminho é zero na média em um ou mais ciclos betatron completos. Se a sintonia $\nu$ é muito maior que 1, então existem vários ciclos betatron em uma revolução e a mudança efetiva em uma revolução é muito pequena. No entanto, se $\nu \approx 1$, irão existir mudanças no comprimento de caminho entre uma revolução e outra. Porém, apenas o comprimento de caminho médio (avaliado em várias revoluções) é interessante nesta análise, então as oscilações betatron não irão, até primeira ordem, influenciar esta média.
+
+Existe um efeito de segunda ordem -- que gera uma variação no tempo proporcional ao quadrado da amplitude betatron. Este efeito pode introduzir um pequeno acoplamento entre as oscilações betatron e as oscilações de energia. Mas todos os processos de segunda ordem estão sendo ignorados aqui.
+
+O deslocamento lateral $x_\epsilon$ da órbita fechada possibilita uma mudança no comprimento da órbita -- porque, dado um desvio de energia, $x_\epsilon$ geralmente tem o mesmo sinal em todo o anel. Tomando $x_\epsilon$ como $x$ na equação \eqref{eq:3.7} e integrando em uma revolução, tem-se que a circunferência $\ell_\epsilon$ da órbita fechada é
+\begin{align}
+	\ell_\epsilon = \oint d\ell = \oint [1+G(s)x_\epsilon(s)]ds
+\end{align}
+O primeiro termo da integral dá a integral completa de $ds$, que é apenas $L$: o comprimento da órbita ideal. O segundo termo resulta no alongamento devido ao desvio de energia; chame-o de $\delta \ell_\epsilon$. A partir da equação \eqref{eq:3.3} para $x-\epsilon$, tem-se que
+\begin{align}
+	\delta \ell_\epsilon = \frac{\epsilon}{E_0} \oint
+	 G(s) \eta(s) ds\label{eq:3.9}
+\end{align}
+A variação no comprimento da órbita é proporcional ao desvio de energia, com uma constante de proporcionalidade --  a integral definida -- que poder ser obtida das propriedades conhecidas do campo guia.
+
+É conveniente definir um parâmetro adimensional $\alpha$, o qual chama-se fator de compactação de momento, dado por
+\begin{align}
+	\frac{\delta \ell_\epsilon}{L} = \alpha \frac{\epsilon}{E_0}
+\end{align}
+Da equação \eqref{eq:3.9}, segue que
+\begin{align}
+	\alpha = \frac{1}{L} \oint G(s) \eta(s) ds\label{eq:3.11}
+\end{align}
+
+O fator de compactação de momento $\alpha$ é um número como a sintonia $\nu$: é uma característica do campo guia como um todo. É um parâmetro crucial das oscilações de energia.
+
+Pode-se ter um melhor entendimento da natureza de $\alpha$ analisando-o no tipo mais comum de campo guia, o isomagnético definido anteriormente. Em um campo isomagnético, $G$ vale $G_0$ em todos os magnetos e zero no restante (veja a equação \eqref{eq:2.9}), então a equação \eqref{eq:3.11} pode ser expressa como
+\begin{align}
+	\alpha = \frac{G_0}{L} \int\limits_{mag}^{} \eta(s) ds\ \ (isomag.)
+\end{align}
+onde a integral deve ser avaliada apenas nas partes da órbita ideal onde existem dipolos.
+
+Este resultado pode ser escrito de forma mais ilustrativa. Suponha que a média magnética de $\eta$ seja definida por
+\begin{align}
+	\mean{\eta}_{mag} = \frac{1}{\ell_{mag}}\int\limits_{mag}^{}\eta(s)ds\label{eq:3.13}
+\end{align}
+onde $\ell_{mag}$ é o comprimento total dos segmentos de órbita nos dipolos. Esta será a definição usual do valor médio de $\eta$ em todos os magnetos.
+
+Mas a combinação de todos os dipolos deve resultar em um círculo completo, então $\ell_{mag}$ é apenas $2\pi$ vezes o raio de curvatura constante $\rho_0 = 1/G_0$, então
+\begin{align}
+	\alpha = \frac{2\pi}{L}\mean{\eta}_{mag} = \frac{\mean{\eta}_{mag}}{R}\label{eq:3.14}
+\end{align}
+onde $R=L/2\pi$ é o raio médio de curvatura definido anteriormente. O fator de compactação de momento $\alpha$ é apenas a relação entre a média magnética de $\eta$ e o raio médio de curvatura da órbita.
+
+Os elétrons de alta energia que importam nesta análise viajam sempre a uma velocidade muito próxima da velocidade da luz, então o tempo necessário para uma revolução no anel de armazenamento varia proporcionalmente apenas com o comprimento da trajetória. Em uma órbita fechada correspondente ao desvio de energia $\epsilon$, a variação $\delta T$ no período de revolução é proporcional ao período de revolução $T_0$ na órbita ideal da forma que a variação no comprimento de trajetória é proporcional ao comprimento na órbita ideal, ou seja,
+\begin{align}
+	\frac{\delta T}{T_0} = \frac{\delta \ell_\epsilon}{L} = \alpha \frac{\epsilon}{E_0}\label{eq:3.15}
+\end{align}
