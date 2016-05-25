@@ -1,5 +1,5 @@
-\subsection{Distribuição das Flutuações}
-O desvio de energia $\epsilon$ em qualquer instante $t$ é o resultado da superposição das contribuições das emissões quânticas em todos os tempos anteriores $t_1$. Então pode-se escrever que
+\subsection{Distribuição das Flutuações}\label{sec:5.3}
+O desvio de energia $\epsilon$ em qualquer instante $t$ é o resultado da superposição das contribuições das emissões quânticas em todos os tempos anteriores $t_i$. Então pode-se escrever que
 \begin{align}
 	\epsilon(t) = \sum\limits_{t_i<t}^{}u_i e^{-(t-t_i)\alpha_\epsilon}cos(\Omega(t-t_i))\label{eq:5.49}
 \end{align}
@@ -11,13 +11,13 @@ O parâmetro $\sigma_\epsilon$ é chamado de desvio padrão e é igual ao valor 
 \begin{align}
 	\sigma_\epsilon^2 = \int\limits_{-\infty}^{+\infty}\epsilon^2w(\epsilon)d\epsilon
 \end{align}
-(A função da distribuição $w(\epsilon)$ é normalizada de forma apropriada para que sua integral completa seja igual a 1.)O desvio padrão $\sigma_\epsilon$ é, portanto, a mesma quantidade que foi avaliada anteriormente.
+(A função da distribuição $w(\epsilon)$ é normalizada de forma apropriada para que sua integral completa seja igual a 1.) O desvio padrão $\sigma_\epsilon$ é, portanto, a mesma quantidade que foi avaliada anteriormente.
 
-Em um feixe de elétrons existe, normalmente, um grande número $N$ de elétrons armazenados. Enquanto as interações entre os elétrons puderem ser ignoradas, a distribuição de energias em um \textit{bunch} irá -- em condições estacionárias -- também ser descrita pela equação \eqref{eq:5.50}. Desta forma, o número de elétrons com energias entre $\epsilon$ e $\epsilon + d\epsilon$ será apenas $Nw(\epsilon)d\epsilon$. E a "largura média" do espalhamento de energia no feixe será descrita por $\sigma_\epsilon$.
+Em um feixe de elétrons existe, normalmente, um número $N$ grande de elétrons armazenados. Enquanto as interações entre os elétrons puderem ser ignoradas, a distribuição de energias em um \textit{bunch} irá -- em condições estacionárias -- também ser descrita pela equação \eqref{eq:5.50}. Desta forma, o número de elétrons com energias entre $\epsilon$ e $\epsilon + d\epsilon$ será apenas $Nw(\epsilon)d\epsilon$. E a "largura média" do \textit{spread} de energia do feixe será descrita por $\sigma_\epsilon$.
 
 Tanto a função de distribuição da equação \eqref{eq:5.50} quanto o cálculo de $\sigma_\epsilon$ assumem que as oscilações de energia são lineares (considerando as não-linearidades, a equação \eqref{eq:5.49} não é correta e os efeitos de uma emissão quântica individual não são mais independentes). No entanto, já foi visto que as oscilações de energia não são lineares para grandes desvios de energia. Se a função da tensão de RF é significantemente não-linear nos desvios de tempo correspondentes aos desvios de energia em questão, deve-se esperar que a distribuição de probabilidade para $\epsilon$ seja distorcida com relação a distribuição ideal da equação \eqref{eq:5.50}. Porém, caso a não-linearidade não seja muito grande na maior parte da distribuição, espera-se que tanto $\sigma_\epsilon$ quanto a função de distribuição dos desvios de energia não sejam muito afetados.
 
-A distribuição dos desvios de energia considerada implica em distribuições relacionadas a outros parâmetros das oscilações de energia. As relações entre elas são mais facilmente entendidas considerando a trajetória do elétron em um diagrama de fase, do mesmo tipo que foi discutido na \autoref{sec:3.5}. Suponha que o estado de uma oscilação de energia seja dado pelo seu desvio de energia $\epsilon$ e seu desvio de tempo "dimensionado" $\theta$ definido por
+A distribuição dos \textit{spreads} de energia considerada implica em distribuições relacionadas a outros parâmetros das oscilações de energia. As relações entre elas são mais facilmente entendidas considerando a trajetória do elétron em um diagrama de espaço de fase, do mesmo tipo que foi discutido na \autoref{sec:3.5}. Suponha que o estado de uma oscilação de energia seja dado pelo seu desvio de energia $\epsilon$ e seu desvio de tempo "dimensionado" $\theta$ definido por
 \begin{align}
 	\theta = \frac{\Omega E_0}{\alpha}\tau\label{eq:5.52}
 \end{align}
@@ -77,13 +77,13 @@ e $A$ é uma amplitude com variação lenta. Os termos $A$ e $\varphi$ são uma 
 
 Agora, a distribuição das oscilações de energia dos elétrons em um \textit{bunch} pode ser representada pela distribuição de pontos no diagrama de espaço de fase indicada na esquematicamente na \autoref{fig:fig44}(b). Uma descrição completa da distribuição é dada especificando a densidade $\psi(\epsilon,\theta)$ no plano $\epsilon$,$\theta$. Isto é, $\psi(\epsilon,\theta)d\epsilon d\theta$ representa o número de elétrons encontrados no elemento de área $d\epsilon d\theta$ localizado em $(\epsilon,\theta)$. A projeção de $\psi(\epsilon,\theta)$ no plano horizontal já é conhecida. Se existem $N$ elétrons em um \textit{bunch}, é apenas $Nw(\epsilon)$. Mas em um quarto da oscilação cada elétron rotaciona um quarto de revolução em torno da origem da figura. Já que uma distribuição estacionária está sendo considerada -- isto é, ela não varia com o tempo -- as projeções nos eixos horizontal e vertical devem ser idênticas. Dito isso, o número de elétrons em um elemento de área $d\epsilon d\theta$ deve ser dado por
 \begin{align}
-	\psi(\epsilon,\theta)d\epsilon d\theta = \frac{N}{2\pi \sigma_\epsilon^2}\ e^{-(\epsilon^2+\theta^2)/2\sigma_\epsilon^2}d\epsilon d\theta
+	\psi(\epsilon,\theta)d\epsilon d\theta = \frac{N}{2\pi \sigma_\epsilon^2}\ e^{-(\epsilon^2+\theta^2)/2\sigma_\epsilon^2}d\epsilon d\theta\label{eq:5.57}
 \end{align}
 A projeção no eixo horizontal é
-\begin{align}
+\begin{align*}
 	\int \psi(\epsilon,\theta)d\theta = \frac{N}{\sqrt{2\pi}\sigma_\epsilon}\ e^{-\epsilon^2/2\sigma_\epsilon^2}d\epsilon
-\end{align}
-que corresponde exatamente ao produto de $N$ com $w(\epsilon)$ dado pela equação \eqref{eq:5.50}. De forma similar, a distribuição em $\theta$ é
+\end{align*}
+que corresponde exatamente ao produto de $N$ com $w(\epsilon)d\epsilon$ dado pela equação \eqref{eq:5.50}. De forma similar, a distribuição em $\theta$ é
 \begin{align}
 	\frac{N}{\sqrt{2\pi}\sigma_\epsilon}\ e^{-\theta^2/2\sigma_\epsilon^2}
 \end{align}
