@@ -1,0 +1,37 @@
+\subsection{Aproximação para órbita fechada e fator de compactação de momento}\label{sec:3.3}
+Para campos guias mais práticos, existe uma relação próxima entre a função de dispersão $\eta(s)$ e a função betatron radial $\beta_x(s)$ a qual foi o foco em análises anteriores. Como a demonstração desta conexão é um pouco longa, ela não será feita aqui, apenas seu resultados serão apresentados. Para um campo guia isomagnético que possui uma função betatron bem comportada (sem variações bruscas), uma boa aproximação para $\eta(s)$ é
+\begin{align}
+	\eta(s) \approx a_0 \beta_x^{1/2}(s) = a_o \zeta(s)\ \ (isomag.)\label{eq:3.16}
+\end{align}
+onde $a_0$ é uma constante. Exceto pelo fator de escala $a_0$, a função $\eta(s)$ tem uma forma muito próxima à forma de $\zeta(s)$. Essa similaridade pode ser confirmada pelo menos para um caso comparando as Figuras \ref{fig:fig18} e \ref{fig:fig29} que mostram $\zeta_x(s)$ e $\eta(s)$ para um mesmo campo guia ilustrativo. Para este exemplo, a equação \eqref{eq:3.16} é uma boa aproximação.
+
+Para a maioria das aplicações, será suficiente tomar $a_0$ como a relação entre as duas funções conhecidas. A equação que vem a partir da derivação matemática da equação \eqref{eq:3.16} é
+\begin{align}
+	a_0 = \frac{\mean{\beta_x^{1/2}}_{mag}}{\nu_x}\ \ (isomag.)\label{eq:3.17}
+\end{align}
+onde $\nu_x$ é a sintonia horizontal e a média magnética de $\beta_x^{1/2}$ é definida da mesma forma como foi definida para $\eta$ na análise anterior -- veja a equação \eqref{eq:3.13}.
+
+O fator de escala $a_0$ também pode ser expresso em função dos parâmetros do anel definidos anteriormente. Analisando a média de ambos os lados da equação \eqref{eq:3.16} em todos os magnetos, tem-se que
+\begin{align}
+	\mean{\eta}_{mag} \approx a_0 \mean{\beta_x^{1/2}}_{mag}\ \ (isomag.)
+\end{align}
+Pela equação \eqref{eq:3.15}, o lado esquerdo da equação é apenas $\alpha R$ e pela equação \eqref{eq:3.17} o lado direito é apenas $a_0^2 \nu_x$, então
+\begin{align}
+	a_0^2 \approx \frac{\alpha R}{\nu_x}
+\end{align}
+e $\eta(s)$ pode ser escrito como
+\begin{align}
+	\eta(s) \approx \left(\frac{\alpha R}{\nu_x}\right)^{1/2}\beta_x^{1/2}(s)\label{eq:3.21}
+\end{align}
+Esta aproximação geralmente será uma representação adequada de $\eta(s)$.
+
+Uma aproximação mais grosseira de $a_0$ pode ser obtida notando que, falando de forma geral, a média de $\beta_x^{1/2}$ nos ímãs é aproximadamente igual a raíz quadrada do valor típico de $\beta_x$ -- que foi definido anteriormente como $\beta_{xn} = R/\nu_x$ (veja a equação \eqref{eq:2.72}). Entção, utilizando a equação \eqref{eq:3.17}, espera-se que
+\begin{align}
+	a_0^2 \approx \frac{R}{\nu_x^3}
+\end{align}
+
+Os dois últimos resultados mostram uma conexão útil entre a sintonia $\nu_x$ e o fator de compactação de momento $\alpha$ dada por
+\begin{align}
+	\alpha \approx \frac{1}{\nu_x^2}
+\end{align}
+Esta simples conexão entre $\alpha$ e $\nu_x$ é útil para entender as características gerais dos anéis de armazenamento de alta energia. Considerando $\nu_x$ como a medida da "força" de focalização do campo guia, o fator de compactação de momento diminui com o inverso do quadrado da força.
