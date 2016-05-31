@@ -27,7 +27,7 @@ Geralmente, o movimento em $\tau$ pode ser avaliado apenas por computação num�
 \end{align}
 onde $F(\tau)$ é dada pela equação \eqref{eq:3.51}. Este tipo de equação é geralmente resolvido definindo uma função de "energia potencial", a qual é o negativo da integral da força. Assim, define-se
 \begin{align}
-	\Phi(\tau) = \frac{\alpha}{E_0 T_0} \int\limits_{0}^{\tau}[eV(\bar{\tau}) - U_0]d\bar{\tau}
+	\Phi(\tau) = \frac{\alpha}{E_0 T_0} \int\limits_{0}^{\tau}[eV(\bar{\tau}) - U_0]d\bar{\tau}\label{eq:3.53}
 \end{align}
 Agora o movimento pode ser analisado utilizando o princípio de conservação de energia. Em cada instante, a soma da "energia potencial" $\Phi(\tau)$ e da "energia cinética" -- dada por $\frac{1}{2}(d\tau/dt)^2$ -- deve ser constante, dada pela "energia total". A energia total também é o máximo $\Phi_0$ que pode ser alcançado por $\Phi(\tau)$ -- o qual irá ocorrer quando $d\tau/dt$ for zero. Logo, pode-se escrever que
 \begin{align}
@@ -74,12 +74,12 @@ As oscilações estáveis máximas variam entre os pontos C e D. Note que o pont
 
 Agora, pode-se analisar como o sistema de RF pode determinar a abertura dinâmica do anel de armazenamento. Desvios de energia maiores que $\pm \epsilon_{max}$ -- na \autoref{fig:fig37} -- não podem ser armazenados no anel. Elétrons podem ser perdidos em desvios de energia menores se seus deslocamentos laterais $x_\epsilon$ associados a $\epsilon$ fizerem com que o elétron colida com alguma barreira física que limita a abertura radial. Normalmente, no entanto, a limitação da RF que determina a abertura dinâmica $\pm \epsilon_{pico}$. Da equação \eqref{eq:3.56}
 \begin{align}
-	\frac{\epsilon_{max}}{E_0} = \frac{1}{\alpha}[2\Phi_{max}]^{1/2}
+	\frac{\epsilon_{max}}{E_0} = \frac{1}{\alpha}[2\Phi_{max}]^{1/2}\label{eq:3.57}
 \end{align}
 
 Se você analisar $\Phi(\tau)$ no caso especial que a tensão de RF é senoidal -- ou seja, descrita pela \eqref{eq:3.36} -- obtém-se que
 \begin{align}
-	\Phi_{max} = \frac{\alpha U_0}{2\pi k E_0} F(q)
+	\Phi_{max} = \frac{\alpha U_0}{2\pi k E_0} F(q)\label{eq:3.58}
 \end{align}
 onde
 \begin{align}
@@ -87,7 +87,7 @@ onde
 \end{align}
 é a sobretensão -- a razão entre a tensão de pico de RF e a tensão mínima necessária para armazenar um elétron síncrono -- e
 \begin{align}
-	F(q) = 2\left[\sqrt{q^2 - 1} - cos^{-1}(1/q)\right]
+	F(q) = 2\left[\sqrt{q^2 - 1} - cos^{-1}(1/q)\right]\label{eq:3.60}
 \end{align}
 A abertura dinâmica $\epsilon_{max}$ para este caso é dada por
 \begin{align}
