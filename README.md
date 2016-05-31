@@ -1,5 +1,3 @@
-# resumoSands
-# resumoSands
-# resumoSands
-# NotasAulaSands
-# NotasAulaSands
+# Notas de Aula do Grupo de Estudos de Física de Aceleradores - FAC/LNLS
+
+Este documento foi desenvolvido tendo como base o livro "The physics of electron storage rings: an introduction", escrito por Matthew Sands. Seu objetivo é auxiliar o estudo da dinâmica de aceleradores de particulas, mais especificamente durante as discussões do grupo de estudos criado pelo grupo de Física de Aceleradores (FAC) do Laboratório Nacional de Luz Síncrotron (LNLS). Alguns capítulos foram desprezados pois tratavam de aspectos específicos de aceleradores colisores, os quais não são objetos de estudo deste grupo. Nele consta uma tradução (não-oficial) do livro, juntamente com algumas revisões e a inclusão de deduções e comentários pertinentes ao estudo realizado.
