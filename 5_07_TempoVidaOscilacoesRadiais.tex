@@ -1,13 +1,13 @@
-\subsection{Tempo de vida a partir das oscilações radiais}
+\subsection{Tempo de vida a partir das oscilações radiais}\label{sec:5.7}
 Na análise anterior considerou-se que a probabilidade de um elétron passar por uma coordenada $s$ com deslocamento radial entre $x$ e $x+dx$ é distribuída conforme uma Gaussiana -- dada por
 \begin{align}
 	w(x)dx = \frac{1}{\sqrt{2\pi} \sigma_x}\ e^{-x^2/2\sigma_x^2}dx\label{eq:5.116}
 \end{align}
 com $\sigma_x$ uma função de $s$. É claro que esta distribuição não é completamente correta uma vez que esta possui "caudas" que se estendem até grandes valores de deslocamento, tanto positivos quanto negativos, enquanto que, em um anel de armazenamento real, o feixe deve se manter dentro da câmara de vácuo, a qual tem abertura finita. Logo, a função de probabilidade da equação \eqref{eq:5.116} pode ser apenas uma aproximação, a qual é bem razoável com tanto que a abertura da câmara de vácuo seja bem maior que $\sigma_x$ em todo o anel.
 
-No entanto, mesmo quando a abertura é grande, podem haver efeitos significantes desta limitação. Cedo ou tarde o elétron irá ter uma flutuação suficientemente grande durante sua emissão quântica a qual produzirá uma deslocamento do tamanho do limite da abertura dinâmica. Então, este elétron será perdido devido à colisão com a câmara de vácuo -- ou qualquer outra coisa que defina o limite da abertura dinâmica. De forma alternativa, considerando as não-linearidades do campo guia, amplitudes de oscilação maiores podem se tornar instáveis, causando a perda do elétron do feixe. Será conveniente nesta discussão pensar em termos de uma abertura dinâmica limitada por um obstáculo físico. Uma extensão deste raciocínio a uma abertura limitada por forças magnéticas é direta.
+No entanto, mesmo quando a abertura é grande, podem haver efeitos significativos desta limitação. Cedo ou tarde o elétron irá ter uma flutuação suficientemente grande durante sua emissão quântica, a qual produzirá um deslocamento do tamanho do limite da abertura dinâmica. Então, este elétron será perdido devido à colisão com a câmara de vácuo -- ou qualquer outra coisa que defina o limite da abertura dinâmica. De forma alternativa, considerando as não-linearidades do campo guia, amplitudes de oscilação maiores podem se tornar instáveis, causando a perda do elétron do feixe. Será conveniente nesta discussão pensar em termos de uma abertura dinâmica limitada por um obstáculo físico. Uma extensão deste raciocínio a uma abertura limitada por forças magnéticas é direta.
 
-Com tanto que a chance de um elétron se perder no limite da abertura seja pequena -- ou seja, que esta seja muito menor que 1 em um tempo de amortecimento -- a probabilidade por unidade de tempo de se perder é a mesma para todos os elétrons. Então a taxa de perda será proporcional ao número $N$ de elétrons presentes; e $N$ irá, portanto, decrescer exponencialmente com uma constante de tempo $\tau_q$ ligada à taxa de perda por
+Com tanto que a chance de um elétron se perder no limite da abertura seja pequena -- ou seja, que esta seja muito menor que 1 em um tempo de amortecimento -- a probabilidade de perda por unidade de tempo é a mesma para todos os elétrons. Então a taxa de perda será proporcional ao número $N$ de elétrons presentes; e $N$ irá, portanto, decrescer exponencialmente com uma constante de tempo $\tau_q$ ligada à taxa de perda por
 \begin{align}
 	\frac{1}{\tau_q} = -\frac{1}{N} \frac{dN}{dt}
 \end{align}
@@ -26,7 +26,7 @@ Suponha que em alguma azimutal qualquer $s_1$ uma obstrução defina o limite da
 	\label{fig:fig46}
 \end{figure}
 
-Foi visto na \autoref{sec:2.7} que o deslocamento radial em sucessivas passagens coordenada em particular varia com o tempo conforme
+Foi visto na \autoref{sec:2.7} que o deslocamento radial em sucessivas passagens por uma coordenada em particular varia com o tempo conforme
 \begin{align}
 	x = a\sqrt{\beta_1}\ cos(\omega t)
 \end{align}
@@ -34,7 +34,7 @@ Como foi feito na \autoref{sec:5.3} para as oscilações de energia, pode-se tom
 \begin{align}
 	W = a^2 \beta_1
 \end{align}
-Efeitos quânticos e amortecimento por radiação produzem flutuações de variação lente em $W$. Os mesmos argumentos utilizados na \autoref{sec:5.3} podem ser usados aqui para mostrar que -- na ausência de qualquer limite de abertura -- os elétrons de um feixe terão uma distribuição de $W$ de acordo com (veja a equação \eqref{eq:5.62})
+Efeitos quânticos e de amortecimento por radiação produzem flutuações de variação lenta em $W$. Os mesmos argumentos utilizados na \autoref{sec:5.3} podem ser usados aqui para mostrar que -- na ausência de qualquer limite de abertura -- os elétrons de um feixe terão uma distribuição de $W$ de acordo com (veja a equação \eqref{eq:5.62})
 \begin{align}
 	h(W) = \frac{N}{\mean{W}}\ e^{-W/\mean{W}}\label{eq:5.120}
 \end{align}
@@ -47,9 +47,9 @@ onde o valor médio $\mean{W}$ é igual a $2\sigma_x^2$ (a função $h(W)$ é de
 	\label{fig:fig47}
 \end{figure}
 
-Agora considere o que acontece quando existe um limite de abertura que remove qualquer elétron cujo $W$ excedo um limiar $\hat{W}$ -- o qual é chamado de "$W$ de pico". Não existem elétrons com $W > \hat{W}$, então a distribuição atual $h(W)$ deve mudar para grandes valores de $W$ de forma semelhante à curva tracejada da \autoref{fig:fig47}. Pode-se pensar no que está acontecendo da seguinte maneira. Os efeitos quânticos estão continuamente tentando preencher a distribuição ideal com uma "difusão" dos elétrons da região de baixo $W$ para a região de grande $W$. Mas cada vez que um elétron alcança $\hat{W}$ ele é "varrido para fora", então há uma perda contínua na perda por radiação da distribuição. Pode-se estimar esta taxa de perda.
+Agora considere o que acontece quando existe um limite de abertura que remove qualquer elétron cujo $W$ excedo um limiar $\hat{W}$ -- o qual é chamado de "$W$ de pico". Não existem elétrons com $W > \hat{W}$, então a distribuição atual $h(W)$ deve mudar para grandes valores de $W$ de forma semelhante à curva tracejada da \autoref{fig:fig47}. Pode-se pensar no que está acontecendo da seguinte maneira. Os efeitos quânticos estão continuamente tentando preencher a distribuição ideal com uma "difusão" dos elétrons da região de baixo $W$ para a região de alto $W$. Mas cada vez que um elétron alcança $\hat{W}$ ele é "varrido para fora", então há uma perda contínua na perda por radiação da distribuição. Pode-se estimar a taxa desta perda.
 
-Pode-se fazer uma estimativa grosseira da seguinte maneira. Foi dito que o "tempo de relaxamento" característico das flutuações quânticas é igual à constante de tempo de amortecimento $\tau_x$. Desta forma, pode-se chutar que há uma "tentativa" de preencher a perda por radiaçãoão da distribuição ideal a cada tempo de amortecimento. Então o número de elétrons perdidos em cada tempo de amortecimento será igual ao número de elétrons na distribuição ideal com $W> \hat{W}$. Este número é
+Pode-se fazer uma estimativa grosseira da seguinte maneira. Foi dito que o "tempo de relaxamento" característico -- ou seja, o tempo necessário para a distribuição alcançar a distribuição de equilíbrio do sistema -- das flutuações quânticas é igual à constante de tempo de amortecimento $\tau_x$. Desta forma, pode-se chutar que há uma "tentativa" de preencher a perda por radiação da distribuição ideal a cada tempo de amortecimento. Então o número de elétrons perdidos em cada tempo de amortecimento será igual ao número de elétrons na distribuição ideal com $W> \hat{W}$ -- isto é, no tempo $\tau_x$, todos os elétrons com $W>\hat{W}$ serão perdidos. Este número é
 \begin{align}
 	N(>\hat{W}) = \int\limits_{\hat{W}}^{\infty}h(W)dW = N\ e^{-\hat{W}/\mean{W}}
 \end{align}
@@ -67,7 +67,7 @@ Um cálculo mais exato de $\tau_q$ requer que uma equação de difusão para $h(
 
 Considere o que aconteceria na vizinhança de algum $W_0$ muito maior que $\mean{W}$ caso não existisse um limite de abertura. A chance de achar qualquer elétron com $W>W_0$ na distribuição ideal é muito pequena. Espera-se, então, que uma vez que um elétron entre na perda por radiação ($W>W_0$) é mais provável que ele retorne rapidamente ao corpo da distribuição -- seu lugar na perda por radiação sendo reposto por outro elétron sem sorte. Considere agora o fluxo de elétrons passando por uma pequena zona\footnote{Pensando na passagem por uma "zona", pode-se ignorar as flutuações microscópicas da amplitude.} próxima de $W_0$. Os elétrons posicionados na perda por radiaçãoão irão passar para o lado esquerdo por esta zona e um fluxo igual de elétrons irão (em condições estacionárias) passar para o lado direito pela mesma zona devido a flutuações quânticas anormais. Neste pensamento, eventos improváveis onde o elétron deixando a cauda teria flutuações anormais neste instante e entraria novamente na cauda não são considerados.
 
-Hora de estimar o fluxo de elétrons saindo da cauda. Quando $W$ é grande, as flutuações "normais" de energia podem ser negligenciadas em comparação com a taxa de de decrescimento de $W$ devido ao amortecimento. Para qualquer elétron, o amortecimento resulta em
+Hora de estimar o fluxo de elétrons saindo da cauda. Quando $W$ é grande, as flutuações "normais" de energia podem ser negligenciadas em comparação com a taxa de decrescimento de $W$ devido ao amortecimento. Para qualquer elétron, o amortecimento resulta em
 \begin{align}
 	\frac{dW}{dt} = -\frac{2W}{\tau_x}
 \end{align}
@@ -104,4 +104,4 @@ o que resulta em $\hat{W}/\mean{W} \approx 18$ e, pela equação \eqref{eq:5.127
 \begin{align}
 	\tau_q = \frac{\tau_x}{36}\ e^{18} \approx 1.5 \times 10^6 \tau_x
 \end{align}
-Como $\tau_x$ é tipicamente em torno de 0.1 segundos. A abertura crítica resulta em uma tempo de vida quântico de mais ou menos 1 dia. Outros efeitos como espalhamento de gases resultam em tempos de vida de algumas horas e o período de injeção (tempo necessário para armazenar o feixe de elétrons) é geralmente de um fração de hora, então o tempo de vida de um dia é um tanto quanto "seguro". Assim, pode-se entender à "regra do polegar\footnote{Expressão que caracteriza um método comumente aceito o qual se baseia no conhecimento prático, não tendo embasamento científico.}" de que a abertura total deve ser ao menos 12 vezes o desvio padrão $\sigma_x$ da distribuição radial. Uma regra similar se aplica à abertura vertical.
+Como $\tau_x$ é tipicamente em torno de 0.1 segundos, a abertura crítica resulta em uma tempo de vida quântico de mais ou menos 1 dia. Outros efeitos como espalhamento de gases resultam em tempos de vida de algumas horas e o período de injeção (tempo necessário para armazenar o feixe de elétrons) é geralmente de uma fração de hora, então o tempo de vida de um dia é um tanto quanto "seguro". Assim, pode-se entender à "regra do polegar\footnote{Expressão que caracteriza um método comumente aceito o qual se baseia no conhecimento prático, não tendo embasamento científico.}" de que a abertura total deve ser ao menos 12 vezes o desvio padrão $\sigma_x$ da distribuição radial. Uma regra similar se aplica à abertura vertical.
